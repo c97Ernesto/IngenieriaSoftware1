@@ -89,39 +89,89 @@ _**Métodos interactivos**_
 	- _Empleado_, que registra los datos del paciente.
 	- _Enfermero_, *
 	- _Doctores_, registra los tratamientos.
-
-
-
+	- _Director_, consulta las historias clínicas
 
 
 - Puntos de vista:
 	- Interactuadores:
-
+		- _Empleado_, registra datos personales.
+		- _Doctor_, registra tratamientos que debe realizar.
 
 		
 
 	- Indirecto: 
 	
 	- Dominio: 
-
+		- _Normativas_, impuestas por el ministerio de salud
 		
 - Fuentes de información:
-
+	- _Historia clínica_
+		
 ## Entrevistas
 ###Parte 1: Definiciones.
 **1) Describa qué tipo de información puede obtenerse en una entrevista.**
+- Buscar opiniones en vez de hechos.
+- Capturar los sentimientos del entrevistado.
+- Objetivos.
+- Cuestiones sobre HCI (interacción humano computadora).
 
 **2) Enumere y describa brevemente las etapas de la preparación de una entrevista.**
 
+1. Leer el material sobre los antecedentes.
+- Poner atención en el lenguaje. Buscar un vocabulario común. Imprescindible para poder entender al entrevistado.	
+		
+2. Establecer los objetivos de la entrevista.
+	
+3. Decidir a quien/es entrevistar.
+- Minimizar el número de entrevistas
+- Los entrevistados deben conocer con antelación el objetivo de la entrevista y las preguntas que se le van a hacer.
+	
+4. Planifiación de la entrevista y preparación del entrevistado.
+- Establecer fecha, hora, lugar y duración de cada entrevista de acuerdo con el entrevistado.
+	
+5. Decidir sobre los tipos de preguntas y su estructura.
+
 **3) Enumere y describa brevemente qué tipos de preguntas puede contener una entrevista. Detalle ventajas y desventajas de cada una.**
 
+**Abiertas:** Permite al encuestado responder de cualquier manera.
+
+- Ventajas
+	- Revelan nueva línea de preguntas
+	- Hacen más interesante la entrevista
+	- Permiten espontaneidad
+
+- Desventajas
+	- Pueden dar muchos detalles irrelevantes
+	- Se puede perder el control de la entrevista
+	- Parece que el entrevistador no tiene los objetivo claros
+	
+**Cerradas:** Las respuestas son directas, cortas o de selección.
+
+- Ventajas 
+	- Ahorran tiempo.
+	- Se mantiene más fácil el control de la entrevista.
+	- Se consiguen datos relevantes.
+- Desventajas
+	- Pueden aburrir al encuestado.
+	- No se obtienen detalles.
+	- No se puede generar una buena comunicación entre las partes.
+
+**Sondeo:** El propósito es ir más allá de la respuesta inicial para obtener más detalles significativos, aclarar la información y ampliar el punto del entrevistado.
+
+
 **4) Enumere y describa brevemente qué tipo de estructuras y organización existen para el armado de una entrevista.**
+
+1. _**Piramidal (inductivo):**_ Se empiezan con preguntas muy detallas, a menudo cerradas. Despúes expande los temas al permitir preguntas abiertas y respuestas más generalizadas. Se utiliza si se cree que el entrevistado necesita entrar en calor en cuanto al tema.
+
+2. _**Embudo (deductivo):**_ Se comienza con preguntas generalizadas y abiertas, para despúes reducir la cantidad de respuestas posibles mediante el uso de preguntas cerrada. Es conveniente usar ésta secuencia de preguntas cuando el entrevistado está relacionado sentimentalmente con el tema y necesita libertad para expresar sus sentimientos.
+
+3. _**Diamante (combinación de las anteriores):**_ El entrevistador empieza con preguntas fáciles y cerradas que permiten al entrevistador entrar en calor; a la mitad se le pregunta lo que opina sobre temas amplios que obviamente no tienen solo una respuesta "correcta". Después el entrevistador restringe incluso más las preguntas para obtener respuestas específicas, con lo cual se produce un cierre tanto para el entrevistado como para el entrevistador.
 
 **5) Analice un formato de la planilla adecuado al momento de armar una entrevista.**
 
 **6) Analice un formato de la planilla adecuado al momento de terminar una entrevista.**
 
-###Parte 1: Definiciones.
+###Parte 2: Situaciones.
 
 ####Situación 1
 Tiene una entrevista con el gerente de ventas de una empresa el cual desea informatizar dicho sector pero no tuvo tiempo de preparar las preguntas por lo que le pidió a un nuevo empleado que le prepare algunas. Cuando las lee, se da cuenta que son inadecuadas.
@@ -129,6 +179,7 @@ Tiene una entrevista con el gerente de ventas de una empresa el cual desea infor
 Lea las preguntas y vuelva a redactarlas de una manera más apropiada. Especifique por qué le parece inadecuada cada una de ellas.
 
 1. Sus subordinados me dijeron que la empresa no anda bien. ¿Es cierto?
+Los empleados me han comentado que la empresa no está funcionando de la mejor manera. Puede ser que esto sea así?
 
 2. Soy nuevo en esto. ¿Qué he dejado afuera?
 
