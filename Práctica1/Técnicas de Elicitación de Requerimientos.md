@@ -50,7 +50,6 @@ _**Métodos interactivos**_
 
 **6.Enumerar tres problemas de comunicación que pueden existir en la elicitación de requisitos.**
 
-- Problemas de comunicación
 - Limitaciones cognitivas
 - Técnicos
 
@@ -62,42 +61,41 @@ _**Métodos interactivos**_
 **1)** En un sistema de registro de asistencia a través de técnicas biométricas (huella digital) de estudiantes universitarios para la cátedra de Ingeniería I. Este sistema se alimentará de un listado otorgado por la oficina de alumnos de la facultad. Además, necesita la autorización del Jefe de Trabajos Prácticos del turno correspondiente para luego los alumnos poder registrar el presente. También, el profesor a cargo de la materia podrá consultar y listar el estado de cada alumno perteneciente a su cátedra. El sistema sólo se utilizará en el ámbito de la facultad de Informática y deberá adecuarse a la reglamentación sobre privacidad de los datos en el ámbito de la misma.
 
 - Stakeholders:
-	- _Oficina de alumnos_, otorga el listado.
+	- _Oficina (personal) de alumnos_, otorga el listado.
 	- _Jefe de Trabajos Pŕacticos_, del cual se necesita la autorización.
 	- _Alumnos_, que registran el presente en el sistema.
 	- _Profesor_, que consulta y lista el estado de los alumnos registrados en el sistema.
 	
 - Puntos de vista:
 	- Interactuadores:
-		- _estudiantes universitarios_, creadores del sistema.
 		- _alumnos de la cátedra_, mediante su huella digital.
-		
+		- _profesor a cargo_, cunsulta el listado.
+		- _jefe de trabajos pŕacticos_ da la autorización.
 
 	- Indirecto: 
 	
 	- Dominio: 
-		- _reglamentación sobre privacidad de los datos_
+		- _reglamentación sobre privacidad de los datos de la facultad_
 		
 - Fuentes de información:
-	- _huellas de alumnos_
+	- _stakeholders_
 	- _listado otorgado por la oficina de alumnos_
 	
 **2)** Se desea desarrollar un sistema para gestionar y administrar la atención de pacientes en una clínica privada especializada en tratamientos alérgicos. Cuando un paciente nuevo es ingresado a la clínica el empleado registra todos sus datos personales, posteriormente un enfermero registra los controles y realiza las anotaciones habituales (temperatura, presión, peso, reacciones alérgicas etc.). Luego, el paciente es derivado con alguno de los doctores de la clínica, quién registra qué tratamientos deberá realizar. El médico también se encarga de registrar si el paciente debe quedar internado y debe mantener su historia clínica durante el período que dure el tratamiento. Se sabe que el director de la clínica puede consultar las historias clínicas de todos los pacientes. El sistema debe adecuarse a las normativas impuestas por el ministerio de salud de la provincia de Bs As.
 
 - Stakeholders:
-	- _Pacientes_, se necesitan los datos.
+	- _Pacientes_, se necesitan los datos (personales).
 	- _Empleado_, que registra los datos del paciente.
-	- _Enfermero_, *
-	- _Doctores_, registra los tratamientos.
+	- _Enfermero_, registra controles habituales.
+	- _Doctores_, registra los tratamientos (datos).
 	- _Director_, consulta las historias clínicas
 
 
 - Puntos de vista:
 	- Interactuadores:
 		- _Empleado_, registra datos personales.
+		- _Enfermero_, registra controles
 		- _Doctor_, registra tratamientos que debe realizar.
-
-		
 
 	- Indirecto: 
 	
@@ -105,7 +103,8 @@ _**Métodos interactivos**_
 		- _Normativas_, impuestas por el ministerio de salud
 		
 - Fuentes de información:
-	- _Historia clínica_
+	- _stakeholders_
+	- _Datos de los pacientes_
 		
 ## Entrevistas
 ###Parte 1: Definiciones.
@@ -178,34 +177,153 @@ Tiene una entrevista con el gerente de ventas de una empresa el cual desea infor
 
 Lea las preguntas y vuelva a redactarlas de una manera más apropiada. Especifique por qué le parece inadecuada cada una de ellas.
 
-1. Sus subordinados me dijeron que la empresa no anda bien. ¿Es cierto?
-Los empleados me han comentado que la empresa no está funcionando de la mejor manera. Puede ser que esto sea así?
+**1.** Sus subordinados me dijeron que la empresa no anda bien. ¿Es cierto?
 
-2. Soy nuevo en esto. ¿Qué he dejado afuera?
+- _Los empleados comentaron que la empresa no está en su mejor momento. Cómo cree que se encuentra en éste momento la empresa?_
 
-3. ¿Estará usted de acuerdo con los demás gerentes de ventas, respecto a que computarizar las ventas mensuales y luego realizar un análisis de la tendencia tendría usted grandes mejoras?
+**2.** Soy nuevo en esto. ¿Qué he dejado afuera?
 
-4. ¿No habrá una mejor manera de hacer proyecciones de sus ventas, que ese procedimiento anticuado que usted utiliza?
+- _Tengo poca experiencia en el tema. Hay algún otro tipo de información que me pueda proporcionar?_
+
+**3.** ¿Estará usted de acuerdo con los demás gerentes de ventas, respecto a que computarizar las ventas mensuales y luego realizar un análisis de la tendencia tendría usted grandes mejoras?
+
+- _Que piensa sobre computarizar las ventas mensuales para ver si al realizar un análisis de la tendencia se llegan a tener mejoras?_
+
+**4.** ¿No habrá una mejor manera de hacer proyecciones de sus ventas, que ese procedimiento anticuado que usted utiliza?
+
+- _Que opina sobre actualizar el procedimiento de proyecciones de ventas?_
+
+
 
 ####Situación 2
 Apenas ha entrado a la oficina de su entrevistado se da cuenta que él no ha dejado de revisar papeles, mirar el reloj y hacer llamadas telefónicas. Usted supone que se siente nervioso porque está atrasado con otro trabajo que tiene que terminar.
 
-1. Explique brevemente cómo resolvería tal situación.
-2. Qué opciones propone para el caso en que la entrevista no pueda reprogramarse.
+**1.** Explique brevemente cómo resolvería tal situación.
+
+**2.** Qué opciones propone para el caso en que la entrevista no pueda reprogramarse.
+
+- Hablar con otra persona que esté en el mismo nivel jerárquico.
+- Algún otra manera en que le resulte más facil/cómodo responder preguntas (cuestionario, 				etc).
 
 ####Situación 3
 El siguiente es el primer informe de una entrevista realizada por uno de los miembros de su equipo de análisis de sistemas:
 
-“En mi opinión, el resultado de la entrevista fue muy bueno. El entrevistado me permitió hablar con él durante una hora y media. Me relató toda la historia del negocio, que fue muy interesante. También mencionó que las cosas no han cambiado desde que él ha estado en la empresa, hace aproximadamente 16 años. En breve nos reuniremos nuevamente para terminar la entrevista, pues, no tuvimos tiempo para analizar las preguntas que preparé “.
+> En mi opinión, el resultado de la entrevista fue muy bueno. El entrevistado me permitió hablar con él durante una hora y media. Me relató toda la historia del negocio, que fue muy interesante. También mencionó que las cosas no han cambiado desde que él ha estado en la empresa, hace aproximadamente 16 años. En breve nos reuniremos nuevamente para terminar la entrevista, pues, no tuvimos tiempo para analizar las preguntas que preparé. 
 
-1. Lea atentamente el informe de la entrevista y explique qué sensación le deja dicho informe.
-2. Indique si existe información que es irrelevante en el informe.
-3. Mencione tres sugerencias que le haría a su compañero de equipo para que realizara una mejor entrevista la próxima vez.
+**1.** Lea atentamente el informe de la entrevista y explique qué sensación le deja dicho informe.
+
+- Respecto a los requisitos, parece que no se ha obtenido mucha información.
+- Por otro lado, se pudo haber llegado a conocer bastante acerca de la persona.
+
+**2.** Indique si existe información que es irrelevante en el informe.
+
+- Si hablamos de requisitos, no hay información relevante más de la que se pudo haber llegado a obtener en documentación previa.
+- En cuanto a la persona, se puede ver el tiempo que tuvo para la entrevista y que tendrá, además de que parece que habló bastante.
+
+**3.** Mencione tres sugerencias que le haría a su compañero de equipo para que realizara una mejor entrevista la próxima vez.
+
+- Apuntar más a los requeriemientos. 
+- Controlar más a la otra persona cuando hable para no perder demasiado tiempo.
+ 
 
 ###Parte 3: Problemas.
+**Problema 1**. Preparar una entrevista para obtener los requerimientos del siguiente problema:
 
-####Problema 1
+Se desea desarrollar un sistema que permita compartir un vehículo para un viaje. La idea es que cuando una persona tiene que realizar un viaje lo publique en la aplicación. Luego el resto de los usuarios se postulan para acompañarla y el chofer podrá seleccionar quienes viajan. El objetivo es abaratar costos y evitar congestiones en el tránsito.
 
-####Problema 1
+**Problema 2**. Preparar una entrevista para obtener los requerimientos del siguiente problema:
+
+CookBooks es un negocio pequeño manejado por una pareja jubilada. Hasta este momento, Cookbooks ha vendido sus libros sólo a través de pedidos por correo. Los dueños ahora quieren desarrollar un sistema en línea para vender libros de cocina difíciles de conseguir y agotados a través de internet. 
+
+Los visitantes podrán hojear diferentes libros de cocina, pero tendrán que crear una cuenta del cliente antes de poder hacer una compra. Los pagos se aceptarán sólo en línea con una tarjeta de crédito reconocida.
+
+## Cuestionarios
+###Parte 1: Definiciones.
+**1) Describa qué tipo de información se busca mediante la aplicación de cuestionarios.**
+
+- Recolectar hechos de un gran número de personas.
+- Detectar un sentimiento generalizado.
+- Detectar problemas entre usuarios.
+- Cuantificar respuestas.
+
+**2) Describa bajo qué circunstancia considera apropiado utilizar cuestionarios.**
+
+- Cuando las personas están dispersas geográficamente (diferentes oficinas u ciudades).
+- Muchas personas involucradas (clientes o usuarios).
+- Obtención de opiniones generales.
+- Identificar problemas generales.
+
+
+**3) Describa los dos tipos de cuestionarios.**
+
+De preguntas abiertas o cerradas.
+
+1. Abiertas:
+	- Son las que dejan abiertas todas las posibles opciones de respuesta.
+	
+2. Cerradas: 
+	- Limitan o cierran las opciones de respuestas disponibles.
+
+###Parte 2: Situaciones.
+####Situación 1
+Alguien nuevo en el centro de cómputo de un gimnasio que tiene varias sucursales, viene con muchas ganas de mejorar las cosas que ve dentro del mismo. Dicho centro está desarrollando un sistema en red que usarán todas las sucursales.
+
+Dado el siguiente cuestionario verifique si es necesario reescribir las preguntas, justifique.
+
+- **Cuestionario 1**
+ 
+- _¡Urgente! Complételo y devuélvalo de manera inmediata, sino su cheque de pago será retenido
+hasta que devuelva el presente._
+
+	1. En pocas palabras indique qué problemas ha tenido el actual centro de cómputo.
+	
+	2. ¿Habrá alguien que piense de la misma manera que usted? Enumere sus nombres.
+	
+	3. ¿Cuántas PC fallaron en estos últimos 6 meses?
+	
+	4. ¿Cuál es el problema más grande que enfrenta al comunicar sus problemas al centro de cómputo?
+
+####Situación 2
+El siguiente es un cuestionario diseñado por un empleado de una empresa textil que se especializa en fabricar medias para hombres. Este empleado lo escribió en calidad de gerente de la oficina que tiene a cargo la propuesta de compra / implementación de un nuevo sistema de cómputos.
+
+- _**¡Hola a todos los empleados!**
+Según los rumores, estamos tras una nueva computadora. Aquí hay algunas preguntas para
+que reflexionen._
+
+	a . ¿Cuánto tiempo ha usado la computadora vieja?
+
+	b. ¿Con que frecuencia se descompone?
+
+	c. ¿Quién la repara?
+
+	d. ¿Cuándo fue la ultima vez que usted sugirió una mejora al sistema de cómputos y esta
+se puso en práctica? ¿De qué se trató?
+
+	e. ¿Cuándo fue la última vez que usted sugirió una mejora al sistema de cómputos y
+nadie la usó? ¿De que se trató?
+
+	f. ¿Usted utiliza una pantalla o una impresora, o ambas?
+
+	g. ¿Qué tan rápido escribe en la computadora?
+
+	h. ¿Cuántas personas necesitan acceder a la base de datos regularmente en su sucursal?
+¿Hay alguien que actualmente no utilice la computadora y que le gustaría
+hacerlo?
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
