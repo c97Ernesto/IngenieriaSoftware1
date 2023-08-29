@@ -50,8 +50,9 @@ _**Métodos interactivos**_
 
 **6.Enumerar tres problemas de comunicación que pueden existir en la elicitación de requisitos.**
 
-- Limitaciones cognitivas
-- Técnicos
+- Conflictos personales o políticos
+- Medios de comunicación inadecuados (diagramas que no entienden los clientes y usuarios).
+- Dificultad para expresar claramente las necesidades.
 
 
 ###Parte 2: Problemas.
