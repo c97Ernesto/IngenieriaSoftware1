@@ -22,33 +22,21 @@
 ####Reverso
 - **CRITERIOS DE ACEPTACIÓN:** Criterios por los cuales una historia cumple con las expectativas del cliente. Formato:
 	- **Escenario 1:** título del criterio
-		- _Dato_ `un contexto inicial`
+		- _Dado_ `un contexto inicial`
 		- _Cuando_ `ocurre un evento`
 		- _Entonces_ `garantiza uno o más resultados`
 					
 						
 	- **Escenario 2:** título del criterio
-		- _Dato_ `un contexto inicial`
+		- _Dado_ `un contexto inicial`
 		- _Cuando_ `ocurre un evento`
 		- _Entonces_ `garantiza uno o más resultados`
 						
 	- **Escenario N:** título del criterio
-		- _Dato_ `un contexto inicial`
+		- _Dado_ `un contexto inicial`
 		- _Cuando_ `ocurre un evento`
 		- _Entonces_ `garantiza uno o más resultados`	
 						
 > Cuando una historia tiene "muchos" criterios de aceptación es una pauta para separar en otras historias.
  
 > Cuando varias historias tienen criterios de aceptación comunes debería separarse en otras historias.
-
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
