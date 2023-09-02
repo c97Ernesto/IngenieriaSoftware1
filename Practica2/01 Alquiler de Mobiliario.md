@@ -53,7 +53,7 @@ cliente para hacer efectivo el alquiler.
 - _Escenario 1: Se realiza la reserva con éxito_
 	- DADO que el usuario quiere hacer la reserva de 4 muebles, superando el mínimo pedido,
 	- CUANDO el usuario ingresa "2/2/2022", "Mi casa", "2", "4"
-	- ENTONCES el sistema aprueba la reserva
+	- ENTONCES el sistema aprueba la reserva y redirige al usuario a realizar el pago con tarjeta de crédito.
 	
 - _Escenario 2: Falla la reserva por cantidad mínima de muebles no superada_
 	- DADO que el usuario quiere hacer una reserva de 2 muebles, no superando el mínimo de 3,
