@@ -26,7 +26,7 @@ ___
 ####Frente
 - ID: **Confeccionar Minuta.**
 
-- TITULO: Como Empleado de Mesa quiero confeccionar una minuta para generar un contraro
+- TITULO: Como Empleado de Mesa quiero confeccionar una minuta para generar un contrato.
 
 - REGLAS DE NEGOCIO:
 	- Los montos de los mismos no pueden superar los $25.000 y que la duración debe ser como máximo de 6 meses.
