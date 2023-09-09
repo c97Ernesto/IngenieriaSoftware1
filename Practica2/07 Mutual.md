@@ -1,4 +1,4 @@
-###Problema 6: Biblioteca
+###Problema 7: Mutual
 
 **ROL DE USUARIOS:**
 
