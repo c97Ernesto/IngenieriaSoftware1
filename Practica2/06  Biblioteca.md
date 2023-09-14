@@ -12,6 +12,10 @@
 - Prestar libros.
 - Verificar pŕestamo.	
 
+Lo que hace la bibliotecaria lo terminaría haciendo el sistema
+
+el sistema suspendería al socio
+
 ####Frente
 - ID: **Asociar Alumnos.**
 

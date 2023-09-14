@@ -1,4 +1,4 @@
-###Problema 6: Biblioteca
+###Problema 8: Teatro
 
 **ROL DE USUARIOS:**
 
@@ -26,22 +26,21 @@
 ####Dorso
 - Criterios de aceptación (Seleccionar opción):
 - _Escenario 1: Selección exitosa._
-	- DADO que se encuentran lugares disponibles
-	- CUANDO el usuario ingresa: "123123", 5,
+	- DADO que hay opciones disponibles y lugares disponibles
+	- CUANDO el usuario selecciona la opción, ingresa su DNI "123123", la cantidad de lugares que desea "3", y selecciona la opción "Pagar",
 	- ENTONCES el sistema lo redirecciona al pago.
 	
-- _Escenario 2: Selección fallida por DNI incorrecto._ 
-	- DADO 
-	- CUANDO
-	- ENTONCES
+- _Escenario 2: Selección fallida porque no hay opciones disponibles._ 
+	- DADO que no hay opciones disponibles
+	- CUANDO el usuario quiere seleccionar, 
+	- ENTONCES el sistema informa que no hay opciones disponibles.
 	
 - _Escenario 2: Selección fallida porque la grilla no muestra lugares disponibles._ 
-	- DADO 
-	- CUANDO
-	- ENTONCES
+	- DADO que hay opciones disponibles, pero no hay lugares disponibles
+	- CUANDO el usuario selecciona una opción, ingresa su DNI "123123"
+	- ENTONCES el sistema informa que no hay lugares disponibles
 
 ___
-
 
 ####Frente
 - ID: **Realizar pago.**
@@ -76,25 +75,27 @@ ___
 ___
 
 ####Frente
-- ID: **Comprar entrada.**
+- ID: **Comprar entrada via web.**
 
 - TITULO: Como vendedor quiero solicitar los datos para poder imprimir las entradas
 
 - REGLAS DE NEGOCIO: 
+	- Pagar con tarjeta de crédito
+	
 	
 ####Dorso
 - Criterios de aceptación (Comprar entrada):
 - _Escenario 1: Compra exitosa._
 	- DADO que el vendedor le pide los datos de la función al cliente
-	- CUANDO
-	- ENTONCES
+	- CUANDO 
+	- ENTONCES el sistema imprime las entradas.
 	
 - _Escenario 2: Compra fallida por datos de tarjeta incorrectos._ 
 	- DADA 
 	- CUANDO
 	- ENTONCES
 	
-- _Escenario 3: Compra fallida por datos incorrectos._ 
+- _Escenario 3: Compra fallida por datos personales incorrectos._ 
 	- DADA 
 	- CUANDO
 	- ENTONCES
@@ -102,23 +103,49 @@ ___
 ___
 
 ####Frente
-- ID: **.**
+- ID: **Retirar entrada.**
 
-- TITULO:
+- TITULO: Como empleado quiero registrar el retiro de las entradas reservadas previamente para que puedan ver la obra
 
 - REGLAS DE NEGOCIO: 
-
+	- Poseer entradas reservadas y que no estén caducadas.
 	
 ####Dorso
-- Criterios de aceptación ():
-- _Escenario 1: ._
-	- DADA 
-	- CUANDO
-	- ENTONCES
+- Criterios de aceptación (Retirar entrada):
+- _Escenario 1: Retiro exitoso._
+	- DADO que el empleado solicita nombre y dni del espectador ,
+	- CUANDO el empleado ingresa: "Juan Carlos", "567567",
+	- ENTONCES el sistema informa que la persona posee entradas válidas.
 	
-- _Escenario 2:._ 
-	- DADA 
-	- CUANDO
-	- ENTONCES
+- _Escenario 2: Retiro fallido porque la persona no posee entradas reservadas._ 
+	- DADO que el empleado solicita nombre y DNI del espectador,
+	- CUANDO el empleado ingresa: "Roberto Carlos", "234423",
+	- ENTONCES el sistema informa que la persona no posee entradas.
+
+- _Escenario 2: Retiro fallido porque la persona posee entradas caducadas._ 
+	- DADO que el empleado solicita nombre y DNI del espectador,
+	- CUANDO el empleado ingresa: "Roberto Carlos", "234423",
+	- ENTONCES el sistema informa que la persona posee entradas caducadas.
+___
+
+####Frente
+- ID: **Verificar Código.**
+
+- TITULO: Como Vendedor quiero verificar el código de compra para imprimir las entradas correspondientes.
+
+- REGLAS DE NEGOCIO: 
+	- Persona llega con código de compra.
+	
+####Dorso
+- Criterios de aceptación (Verificar Código):
+- _Escenario 1: Verificación exitosa._
+	- DADO que el empleado le pide el código de verificación a la persona,
+	- CUANDO éste ingresa "0303456",
+	- ENTONCES el sistema informa que el código es correcto y se imprimen las entradas correspondientes.
+	
+- _Escenario 2: Verificación fallida por código incorrecto._ 
+	- DADO que el empleado le pide el código de verificación a la persona,
+	- CUANDO éste ingresa "8989",
+	- ENTONCES el sistema informa que el código ingresado es incorrecto.
 
 ___
