@@ -1,4 +1,4 @@
-###Problema 7: Mutual
+###Problema 6: Biblioteca
 
 **ROL DE USUARIOS:**
 
@@ -9,22 +9,22 @@
 **HISTORIAS DE USUARIOS:**
 
 - Afiliar Persona	
-- Prestar Servicio
+- 
 
 ####Frente
 - ID: **Afiliar Persona.**
 
 - TITULO: Como Persona quiero afiliarme para recibir una prestación médica.
 
-- REGLAS DE NEGOCIO:
+- REGLAS DE NEGOCIO: 
 	- Poseer tarjeta de crédito
 
 
 ####Dorso
-- Criterios de aceptación (Afiliar Persona):
-- _Escenario 1: Afiliación exitosa._
-	- DADO que la persona posee tarjeta de crédito y ésta es válida
-	- CUANDO 
+- Criterios de aceptación ():
+- _Escenario 1:._
+	- DADO 
+	- CUANDO
 	- ENTONCES
 	
 - _Escenario 2:._ 
@@ -41,9 +41,9 @@ ___
 
 
 ####Frente
-- ID: **Prestar Servicio.**
+- ID: **.**
 
-- TITULO: Como ... quiero prestar un servicio para ...
+- TITULO: 
 
 - REGLAS DE NEGOCIO: 
 	

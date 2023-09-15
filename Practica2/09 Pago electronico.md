@@ -1,33 +1,31 @@
-###Problema 7: Mutual
+###Problema 9: Pago electrónico.
 
 **ROL DE USUARIOS:**
 
-- Persona.
-- Afiliado.
-
+- 
+- 
 
 **HISTORIAS DE USUARIOS:**
 
-- Afiliar Persona	
-- Prestar Servicio
+- 
+- 
 
 ####Frente
-- ID: **Afiliar Persona.**
+- ID: **.**
 
-- TITULO: Como Persona quiero afiliarme para recibir una prestación médica.
+- TITULO: 
 
-- REGLAS DE NEGOCIO:
-	- Poseer tarjeta de crédito
-
+- REGLAS DE NEGOCIO: 
+	- 
 
 ####Dorso
-- Criterios de aceptación (Afiliar Persona):
-- _Escenario 1: Afiliación exitosa._
-	- DADO que la persona posee tarjeta de crédito y ésta es válida
-	- CUANDO 
+- Criterios de aceptación ():
+- _Escenario 1: ._
+	- DADO 
+	- CUANDO
 	- ENTONCES
 	
-- _Escenario 2:._ 
+- _Escenario 2: Recuperación de datos exitoso._ 
 	- DADO 
 	- CUANDO
 	- ENTONCES
@@ -41,9 +39,9 @@ ___
 
 
 ####Frente
-- ID: **Prestar Servicio.**
+- ID: **.**
 
-- TITULO: Como ... quiero prestar un servicio para ...
+- TITULO: 
 
 - REGLAS DE NEGOCIO: 
 	
@@ -65,10 +63,10 @@ ___
 ####Frente
 - ID: **.**
 
-- TITULO: Como bibliotecaria quiero verificar un pŕestamo para ver que no se encuentre vencido
+- TITULO:
 
 - REGLAS DE NEGOCIO: 
-	- Que el prestamo no se encuentre vencido.
+	- 
 
 	
 ####Dorso
