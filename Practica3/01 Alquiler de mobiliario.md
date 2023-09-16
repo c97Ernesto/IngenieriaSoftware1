@@ -1,5 +1,7 @@
 ##Problema 1: Alquiler de mobiliario.
 
+![ejercicio1](./ejercicio01_P3.drawio.png)
+
 **Actores:**
 
 - Usuarios.
@@ -12,7 +14,7 @@ Hay que hacer inicio de sesión -> dice que el usuario se tiene que authenticar.
 
 - Iniciar de Sesión.
 - Cerrar Sesión.
-- Cargar muebles.
+- Cargar mueble.
 - Reservar alquiler.
 - Pagar con tarjeta.
 
