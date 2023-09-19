@@ -1,4 +1,4 @@
-##Problema x: .
+##Problema 06: Biblioteca.
 
 **Actores:**
 

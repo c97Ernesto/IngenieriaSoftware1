@@ -1,4 +1,4 @@
-##Problema x: .
+##Problema 7: Mutual.
 
 **Actores:**
 

@@ -1,4 +1,4 @@
-##Problema x: .
+##Problema 4: Venta de bebidas.
 
 **Actores:**
 
