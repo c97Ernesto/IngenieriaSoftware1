@@ -8,8 +8,6 @@
 - Encargado de mobiliario.
 - Servicios del banco.
 
-Hay que hacer inicio de sesión -> dice que el usuario se tiene que authenticar.
-
 **Casos de Usos**
 
 - Iniciar de Sesión.
@@ -121,11 +119,11 @@ ___
 **Curso Normal:** 
 
 - **Acción del Actor:**
+
 	- Paso 1: El mobiliario autenticado selecciona la opción de "Cargar Mueble".
 	
 	- Paso 3: el mobiliario ingresa los datos
 	
-
 - **Acciones del Sistema:**
 	- Paso 2: El sistema muestra la información de carga de datos del mueble: "código de inventario", "tipo de mueble", "fecha de cración", "fecha de último mantenimiento", "estado", "precio del alquiler".
 	
