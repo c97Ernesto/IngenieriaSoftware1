@@ -1,4 +1,4 @@
-##Problema 06: Biblioteca.
+##Problema 7: Préstamos Personales.
 
 **Actores:**
 

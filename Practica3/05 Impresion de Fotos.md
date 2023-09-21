@@ -1,4 +1,4 @@
-##Problema 5: Casa de fotografías.
+##Problema 5: Impresión de fotos.
 
 **Actores:**
 
