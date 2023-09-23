@@ -1,4 +1,4 @@
-##Problema 1: Alquiler de mobiliario.
+## Problema 1: Alquiler de mobiliario.
 
 ![ejercicio1](./ejercicio01_P3.drawio.png)
 

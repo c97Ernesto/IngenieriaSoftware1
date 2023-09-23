@@ -1,4 +1,4 @@
-###Problema 10: Un aventón.
+### Problema 10: Un aventón.
 
 **ROL DE USUARIOS:**
 
@@ -13,7 +13,7 @@
 - Postular viaje.
 - Calificar usuario
 
-####Frente
+#### Frente
 - ID: **Registrar Persona.**
 
 - TITULO: 
@@ -22,7 +22,7 @@
 	- No puede haber dos correos electrónicos iguales.
 
 
-####Dorso
+#### Dorso
 - Criterios de aceptación ():
 - _Escenario 1:._
 	- DADO 
@@ -42,7 +42,7 @@
 ___
 
 
-####Frente
+#### Frente
 - ID: **Dar de alta viaje.**
 
 - TITULO: Como usuario quiero dar de alta un viaje para que otros usuarios se postulen.
@@ -51,7 +51,7 @@ ___
 	- No se pueden superponer los viajes de una misma persona.
 	- Un usuario que adeuda calificaciones tampoco podrá publicar un viaje.
 	
-####Dorso
+#### Dorso
 - Criterios de aceptación (Dar de alta viaje):
 - _Escenario 1: Alta exitoso._
 	- DADO que el usuario "JuanCa@gmail.com" que no adeuda calificaciones, quiere publicar un viaje el día "23/12/23" a las "12:12". 
@@ -70,7 +70,7 @@ ___
 
 ___
 
-####Frente
+#### Frente
 - ID: **Postular viaje.**
 
 - TITULO: Como usuario quiero postularme a un viaje para poder viajar.
@@ -79,7 +79,7 @@ ___
 	- Decisión del chofer si viaja el usuario o no.
 
 	
-####Dorso
+#### Dorso
 - Criterios de aceptación ():
 - _Escenario 1: Postulación exitosa._
 	- DADO que el usuario "cabj@gmail.com" quiere postularse a un viaje,
@@ -93,7 +93,7 @@ ___
 
 ___
 
-####Frente
+#### Frente
 - ID: **Calificar usuario.**
 
 - TITULO: Como usuario quiero calificar a un usuario ...
@@ -102,7 +102,7 @@ ___
 	- Piloto califica a los copilotos.
 	- Copilotos califican al piloto.
 	
-####Dorso
+#### Dorso
 - Criterios de aceptación ():
 - _Escenario 1: ._
 	- DADA 
@@ -114,4 +114,4 @@ ___
 	- CUANDO
 	- ENTONCES
 
-___
+

@@ -1,4 +1,4 @@
-###Problema 8: Teatro
+### Problema 8: Teatro.
 
 **ROL DE USUARIOS:**
 
@@ -14,7 +14,7 @@
 - Retirar entradas.
 - Verificar código.
 
-####Frente
+#### Frente
 - ID: **Seleccionar opción.**
 
 - TITULO: Como usuario quiero seleccionar una opción para comprar una entrada.
@@ -23,7 +23,7 @@
 	- El pago se realiza con tarjeta de crédito.
 
 
-####Dorso
+#### Dorso
 - Criterios de aceptación (Seleccionar opción):
 - _Escenario 1: Selección exitosa._
 	- DADO que hay opciones disponibles y lugares disponibles
@@ -42,7 +42,7 @@
 
 ___
 
-####Frente
+#### Frente
 - ID: **Realizar pago.**
 
 - TITULO: Como usuario quiero realizar el pago para poder comprar entradas.
@@ -51,7 +51,7 @@ ___
 	- Tener tarjeta de crédito
 	
 	
-####Dorso
+#### Dorso
 - Criterios de aceptación (Realizar Pago):
 - _Escenario 1: Pago realizado con éxito._
 	- DADO que la autorización del banco fue ralizada con éxito.
@@ -72,9 +72,10 @@ ___
 	- DADA 
 	- CUANDO
 	- ENTONCES
+	
 ___
 
-####Frente
+#### Frente
 - ID: **Comprar entrada via web.**
 
 - TITULO: Como vendedor quiero solicitar los datos para poder imprimir las entradas
@@ -83,7 +84,7 @@ ___
 	- Pagar con tarjeta de crédito
 	
 	
-####Dorso
+#### Dorso
 - Criterios de aceptación (Comprar entrada):
 - _Escenario 1: Compra exitosa._
 	- DADO que el vendedor le pide los datos de la función al cliente
@@ -102,7 +103,7 @@ ___
 
 ___
 
-####Frente
+#### Frente
 - ID: **Retirar entrada.**
 
 - TITULO: Como empleado quiero registrar el retiro de las entradas reservadas previamente para que puedan ver la obra
@@ -110,7 +111,7 @@ ___
 - REGLAS DE NEGOCIO: 
 	- Poseer entradas reservadas y que no estén caducadas.
 	
-####Dorso
+#### Dorso
 - Criterios de aceptación (Retirar entrada):
 - _Escenario 1: Retiro exitoso._
 	- DADO que el empleado solicita nombre y dni del espectador ,
@@ -126,9 +127,10 @@ ___
 	- DADO que el empleado solicita nombre y DNI del espectador,
 	- CUANDO el empleado ingresa: "Roberto Carlos", "234423",
 	- ENTONCES el sistema informa que la persona posee entradas caducadas.
+
 ___
 
-####Frente
+#### Frente
 - ID: **Verificar Código.**
 
 - TITULO: Como Vendedor quiero verificar el código de compra para imprimir las entradas correspondientes.
@@ -136,7 +138,7 @@ ___
 - REGLAS DE NEGOCIO: 
 	- Persona llega con código de compra.
 	
-####Dorso
+#### Dorso
 - Criterios de aceptación (Verificar Código):
 - _Escenario 1: Verificación exitosa._
 	- DADO que el empleado le pide el código de verificación a la persona,
@@ -148,4 +150,5 @@ ___
 	- CUANDO éste ingresa "8989",
 	- ENTONCES el sistema informa que el código ingresado es incorrecto.
 
-___
+
+

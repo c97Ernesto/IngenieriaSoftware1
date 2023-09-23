@@ -2,6 +2,8 @@
 <h2 align="center">Práctica 3 – Casos de Uso</h1>
 </div>
 
+[Ir a la sección importante](###dsad)
+
 ###Parte 1: Definiciones Generales
 
 **a)** Describa qué es el desarrollo centrado en el usuario.
@@ -48,3 +50,5 @@
 - Define una línea base para la definición de los planes de prueba.
 - Define una línea base para toda la documentación del sistema.
 - Proporciona una herramienta para el seguimiento de los requisitos.
+
+###dsad

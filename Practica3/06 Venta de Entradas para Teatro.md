@@ -1,4 +1,11 @@
-##Problema 06: Venta de Entradas para Teatro.
+## Problema 06: Venta de Entradas para Teatro.
+**Nombre del caso**
+
+**Descripción**
+
+**Actores**
+
+**Precondiciones**
 
 **Curso Normal:**
 

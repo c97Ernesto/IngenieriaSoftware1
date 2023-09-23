@@ -1,4 +1,4 @@
-##Problema 03: Contratos.
+## Problema 03: Contratos.
 
 **Actores:**
 
@@ -16,7 +16,6 @@
 - Aprobar minuta
 
 - Verificar CUIT
-
 
 ___
 

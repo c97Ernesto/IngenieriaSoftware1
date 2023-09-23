@@ -1,4 +1,4 @@
-###Problema 4: Venta de bebidas
+### Problema 4: Venta de bebidas.
 Se desea modelar un sistema para el manejo de venta de bebidas alcohólicas en linea. Para poder empezar a comprar en el sitio, es necesario que las personas se registren ingresando nombre, apellido, mail (será utilizado como nombre de usuario por lo tanto debe ser único) y edad. Solo se permite que se registren al sitio personas mayores a 18 años, de lo contrario el sistema debe mostrar en pantalla el texto de la ley que impide la venta de bebidas alcohólicas a menores. Si el registro es exitoso el sistema genera una contraseña que es enviada al mail ingresado en el registro.
 
 Para comprar el usuario debe iniciar sesión y una vez logueado el sistema muestra una lista de bebidas, una vez que el usuario selecciona todos los productos que desea comprar, si el usuario es premium se le hace un descuento del 20% y se informa en pantalla el total menos el 20%. Ademas si el usuario seleccionó productos por un monto superior a los $4500 se le hace un 10% de descuento y se informa en pantalla el total menos el 10%. Tenga en cuenta que si el usuario es premium y compra por un monto superior a $4500 se deben aplicar ambos descuentos.
@@ -18,7 +18,7 @@ Para comprar el usuario debe iniciar sesión y una vez logueado el sistema muest
 
 ___
 
-####Frente
+#### Frente
 - ID: **Registrar Persona.**	
 
 - TITULO: Como Persona quiero registrarme en el sistema para comprar bebidas.
@@ -28,7 +28,7 @@ ___
 	- Solo personas mayores de 18 años
 	
 
-####Dorso
+#### Dorso
 - Criterios de aceptación (Registrar Persona):
 
 - _Escenario 1: Registro exitoso de la persona._
@@ -48,7 +48,7 @@ ___
 
 ___
 
-####Frente
+#### Frente
 - ID: **Iniciar Sesión.**
 
 - TITULO: Como Usuario quiero iniciar sesión para comprar bebidas
@@ -56,7 +56,7 @@ ___
 - REGLAS DE NEGOCIO:
 	- Usuario y contraseña correctos.¿?
 	
-####Dorso
+#### Dorso
 - Criterios de aceptación (Iniciar Sesión):
 
 - _Escenario 1: Inicio de sesión exitoso._
@@ -76,7 +76,7 @@ ___
 	
 ___
 
-####Frente
+#### Frente
 - ID: **Listar de bebidas.**
 
 - TITULO: Como Usuario quiero obtener el listado de las bebidas para poder comprar.
@@ -84,7 +84,7 @@ ___
 - REGLAS DE NEGOCIO:
 	- ¿?
 	
-####Dorso
+#### Dorso
 - Criterios de aceptación (Listar bebidas):
 
 - _Escenario 1: Listado de bebidas exitoso._
@@ -99,7 +99,7 @@ ___
 	
 ___
 
-####Frente
+#### Frente
 - ID: **Elegir bebidas.**
 
 - TITULO: Como usuario quiero Elegir una bebida para poder comprarla.
@@ -107,7 +107,7 @@ ___
 - REGLAS DE NEGOCIO:
 	- ¿?
 	
-####Dorso
+#### Dorso
 - Criterios de aceptación (Elegir bebida):
 
 - _Escenario 1: Elección de bebidas exitoso._
@@ -119,9 +119,10 @@ ___
 	- DADO ,
 	- CUANDO ,
 	- ENTONCES 
+	
 ___
 
-####Frente
+#### Frente
 - ID: **Comprar Bebidas.**
 
 - TITULO: Como usuario quiero comprar bebidas para .
@@ -131,7 +132,7 @@ ___
 	Usuario Premiun se le hace un descuento del 20%.
 	Usuario Premiun con monto mayor a 4500 se le hace descuento del 30%.
 
-####Dorso
+#### Dorso
 - Criterios de aceptación (Comprar Bebidas):
 
 - _Escenario 1: Compra exitosa._
@@ -153,5 +154,4 @@ ___
 	- DADO que el usuario "premium" "pepe@gmail.com" eligió bebidas por un monto mayor a $4500,
 	- CUANDO el usuario selecciona "Comprar",
 	- ENTONCES el sisteama informa que la compra se realizó con éxito y con un descuento del 30%.
-___
 

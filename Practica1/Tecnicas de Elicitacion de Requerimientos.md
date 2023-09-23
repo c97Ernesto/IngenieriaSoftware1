@@ -2,7 +2,7 @@
 <h2 align="center"> Obtención de los Requerimientos</h1>
 </div>
 
-###Parte 1: Definiciones.
+### Parte 1: Definiciones.
 **1.Definir brevemente qué es un requerimiento.**
 
 Los requerimientos del sistema especifican lo que el sistema de información deberá hacer o cuál propiedad o cualidad debe de tener éste. 
@@ -58,7 +58,7 @@ _**Métodos interactivos**_
 - Dificultad para expresar claramente las necesidades.
 
 
-###Parte 2: Problemas.
+### Parte 2: Problemas.
 
 **a) Indicar para cada problema quienes podrían ser los *Stakeholders*, los puntos de vista y las fuentes de información.**
 
@@ -111,7 +111,7 @@ _**Métodos interactivos**_
 	- _Datos de los pacientes_
 		
 ## Entrevistas
-###Parte 1: Definiciones.
+### Parte 1: Definiciones.
 **1) Describa qué tipo de información puede obtenerse en una entrevista.**
 - Buscar opiniones en vez de hechos.
 - Capturar los sentimientos del entrevistado.
@@ -174,9 +174,8 @@ _**Métodos interactivos**_
 
 **6) Analice un formato de la planilla adecuado al momento de terminar una entrevista.**
 
-###Parte 2: Situaciones.
-
-####Situación 1
+### Parte 2: Situaciones.
+#### Situación 1
 Tiene una entrevista con el gerente de ventas de una empresa el cual desea informatizar dicho sector pero no tuvo tiempo de preparar las preguntas por lo que le pidió a un nuevo empleado que le prepare algunas. Cuando las lee, se da cuenta que son inadecuadas.
 
 Lea las preguntas y vuelva a redactarlas de una manera más apropiada. Especifique por qué le parece inadecuada cada una de ellas.
@@ -230,7 +229,8 @@ El siguiente es el primer informe de una entrevista realizada por uno de los mie
 - Controlar más a la otra persona cuando hable para no perder demasiado tiempo.
  
 
-###Parte 3: Problemas.
+### Parte 3: Problemas.
+
 **Problema 1**. Preparar una entrevista para obtener los requerimientos del siguiente problema:
 
 Se desea desarrollar un sistema que permita compartir un vehículo para un viaje. La idea es que cuando una persona tiene que realizar un viaje lo publique en la aplicación. Luego el resto de los usuarios se postulan para acompañarla y el chofer podrá seleccionar quienes viajan. El objetivo es abaratar costos y evitar congestiones en el tránsito.
@@ -242,7 +242,7 @@ CookBooks es un negocio pequeño manejado por una pareja jubilada. Hasta este mo
 Los visitantes podrán hojear diferentes libros de cocina, pero tendrán que crear una cuenta del cliente antes de poder hacer una compra. Los pagos se aceptarán sólo en línea con una tarjeta de crédito reconocida.
 
 ## Cuestionarios
-###Parte 1: Definiciones.
+### Parte 1: Definiciones.
 **1) Describa qué tipo de información se busca mediante la aplicación de cuestionarios.**
 
 - Recolectar hechos de un gran número de personas.
@@ -270,8 +270,8 @@ De preguntas abiertas o cerradas.
 	- Limitan o cierran las opciones de respuestas disponibles.
 	- Cuando el analista de sistemas pueda enlistar de manera efectiva todas las posibles respuestas a la pregunta y cuando todas éstas sean mutuamente exclusivas (al elegir una de ellas se descarta la posibilidad de elegir cualquier otra). 
 	
-###Parte 2: Situaciones.
-####Situación 1
+### Parte 2: Situaciones.
+#### Situación 1
 Alguien nuevo en el centro de cómputo de un gimnasio que tiene varias sucursales, viene con muchas ganas de mejorar las cosas que ve dentro del mismo. Dicho centro está desarrollando un sistema en red que usarán todas las sucursales.
 
 Dado el siguiente cuestionario verifique si es necesario reescribir las preguntas, justifique.
@@ -306,7 +306,7 @@ Dado el siguiente cuestionario verifique si es necesario reescribir las pregunta
 	
 	
 		
-####Situación 2
+#### Situación 2
 El siguiente es un cuestionario diseñado por un empleado de una empresa textil que se especializa en fabricar medias para hombres. Este empleado lo escribió en calidad de gerente de la oficina que tiene a cargo la propuesta de compra / implementación de un nuevo sistema de cómputos.
 
 - _**¡Hola a todos los empleados!**

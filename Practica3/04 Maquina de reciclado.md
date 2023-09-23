@@ -1,4 +1,4 @@
-##Problema 4: Máquina de reciclado.
+## Problema 4: Máquina de reciclado.
 
 **Actores:**
 

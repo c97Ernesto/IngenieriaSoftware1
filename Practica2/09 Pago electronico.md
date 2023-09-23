@@ -1,4 +1,4 @@
-###Problema 9: Pago electrónico.
+### Problema 9: Pago electrónico.
 
 **ROL DE USUARIOS:**
 
@@ -10,7 +10,7 @@
 - 
 - 
 
-####Frente
+#### Frente
 - ID: **.**
 
 - TITULO: 
@@ -18,7 +18,7 @@
 - REGLAS DE NEGOCIO: 
 	- 
 
-####Dorso
+#### Dorso
 - Criterios de aceptación ():
 - _Escenario 1: ._
 	- DADO 
@@ -38,7 +38,7 @@
 ___
 
 
-####Frente
+#### Frente
 - ID: **.**
 
 - TITULO: 
@@ -46,7 +46,7 @@ ___
 - REGLAS DE NEGOCIO: 
 	
 	
-####Dorso
+#### Dorso
 - Criterios de aceptación ():
 - _Escenario 1: ._
 	- DADO 
@@ -60,7 +60,7 @@ ___
 
 ___
 
-####Frente
+#### Frente
 - ID: **.**
 
 - TITULO:
@@ -69,7 +69,7 @@ ___
 	- 
 
 	
-####Dorso
+#### Dorso
 - Criterios de aceptación ():
 - _Escenario 1: ._
 	- DADA 
@@ -83,7 +83,7 @@ ___
 
 ___
 
-####Frente
+#### Frente
 - ID: **.**
 
 - TITULO:
@@ -91,7 +91,7 @@ ___
 - REGLAS DE NEGOCIO: 
 
 	
-####Dorso
+#### Dorso
 - Criterios de aceptación ():
 - _Escenario 1: ._
 	- DADA 
@@ -103,4 +103,4 @@ ___
 	- CUANDO
 	- ENTONCES
 
-___
+

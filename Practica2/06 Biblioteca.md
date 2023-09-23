@@ -1,4 +1,4 @@
-###Problema 6: Biblioteca
+###Problema 6: Biblioteca.
 
 **ROL DE USUARIOS:**
 
@@ -16,7 +16,7 @@ Lo que hace la bibliotecaria lo terminaría haciendo el sistema
 
 el sistema suspendería al socio
 
-####Frente
+#### Frente
 - ID: **Asociar Alumnos.**
 
 - TITULO: Como Bibliotecaria quiero asociar un alumno para que éste pueda retirar libros.
@@ -24,7 +24,7 @@ el sistema suspendería al socio
 - REGLAS DE NEGOCIO: 
 	- Presentar DNI y certificado de alumno regular del alumno a asociar.
 
-####Dorso
+#### Dorso
 - Criterios de aceptación (Asociar alumno):
 - _Escenario 1: Asociación del alumno exitosa._
 	- DADO el alumno que presenta su correspondido DNI y certificado de alumno regular
@@ -44,7 +44,7 @@ el sistema suspendería al socio
 ___
 
 
-####Frente
+#### Frente
 - ID: **Prestar Libros.**
 
 - TITULO: Como Bibliotecaria quiero realizar un préstamo para un alumno
@@ -53,7 +53,7 @@ ___
 	- socios habilitados, que no posean más de tres préstamos vigentes y no
 	tengan préstamos vencidos.
 	
-####Dorso
+#### Dorso
 - Criterios de aceptación (Prestar Libros):
 - _Escenario 1: Prestación exitosa._
 	- DADO que el socio
@@ -67,7 +67,7 @@ ___
 
 ___
 
-####Frente
+#### Frente
 - ID: **Verificar Préstamo.**
 
 - TITULO: Como bibliotecaria quiero verificar un pŕestamo para ver que no se encuentre vencido
@@ -76,7 +76,7 @@ ___
 	- Que el prestamo no se encuentre vencido.
 
 	
-####Dorso
+#### Dorso
 - Criterios de aceptación (Verificar Pŕestamo):
 - _Escenario 1: Verificación del préstamo exitoso._
 	- DADO que el asociado hace la devolución del préstamo en correcto estado
@@ -90,7 +90,7 @@ ___
 
 ___
 
-####Frente
+#### Frente
 - ID: **.**
 
 - TITULO:
@@ -98,7 +98,7 @@ ___
 - REGLAS DE NEGOCIO: 
 
 	
-####Dorso
+#### Dorso
 - Criterios de aceptación ():
 - _Escenario 1: ._
 	- DADA 

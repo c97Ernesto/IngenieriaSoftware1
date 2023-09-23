@@ -1,4 +1,4 @@
-##Problema 2: Posgrado.
+## Problema 2: Posgrado.
 
 ![ejercicio1](./ejercicio02_P3.drawio.png)
 

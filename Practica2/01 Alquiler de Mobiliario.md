@@ -1,4 +1,4 @@
-###Problema 1: Alquiler de mobiliario.
+### Problema 1: Alquiler de mobiliario.
 Suponga que trabaja en una consultora la cual ha sido recientemente contactada por una empresa de alquiler de mobiliario para eventos para la realización de una app.
 De las diferentes entrevistas se ha obtenido la siguiente información:
 
@@ -19,7 +19,7 @@ cliente para hacer efectivo el alquiler.
 - Realizar reserva.
 - Realizar Pago.
 
-####Frente
+#### Frente
 - ID: Cargar Mueble
 
 - TITULO: Como encargado quiero dar de alta un mueble para que se pueda alquilar
@@ -27,7 +27,7 @@ cliente para hacer efectivo el alquiler.
 - REGLAS DE NEGOCIO:
 	- No debe existir previamente el código del mueble a cargar.
 	
-####Dorso
+#### Dorso
 - Criterios de aceptación (Cargar Mueble):
 - _Escenario 1: Carga de Mueble exitosa_
 	- DADO que el código de inventario "123123" no se encuentra en el 	sistema, 
@@ -40,7 +40,7 @@ cliente para hacer efectivo el alquiler.
 	- ENTONCES el sistema informa que el Código de Mueble ingresado ya 	existe.
 
 	
-####Frente
+#### Frente
 - ID: Realizar reserva
 
 - TITULO: Como cliente quiero realizar una reserva para el alquiler de muebles.
@@ -48,7 +48,7 @@ cliente para hacer efectivo el alquiler.
 - REGLAS DE NEGOCIO:
 	- Una reserva tiene que incluir como mínimo 3 muebles
 
-####Dorso
+#### Dorso
 - Criterios de aceptación (Realizar reserva):
 - _Escenario 1: Se realiza la reserva con éxito_
 	- DADO que el usuario quiere hacer la reserva de 4 muebles, superando el mínimo pedido,
@@ -61,7 +61,7 @@ cliente para hacer efectivo el alquiler.
 	- ENTONCES el sistema informa que la cantidad mínima de muebles no fue superada.
 	
 
-####Frente
+#### Frente
 - ID: Realizar Pago.
 
 - TITULO: Como cliente quiero realizar el pago con tarjeta de crédito para reservar los muebles.
@@ -70,7 +70,7 @@ cliente para hacer efectivo el alquiler.
 	- Validar tarjeta de crédito.
 	- Abonar el 20% del total de los muebles.
 	
-####Dorso
+#### Dorso
 - Criterios de aceptación (Realizar Pago):
 
 - _Escenario 1: Pago realizado con éxito_

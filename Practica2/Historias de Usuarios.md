@@ -1,15 +1,15 @@
 <div>
-<h2 align="center"> Historias de Usuarios</h1>
+<h2 align="center"> Historias de Usuarios</h2>
 </div>
 
-###Formas de redactarlas
+### Formas de redactarlas
 - La historia de usuario debe responder a tres preguntas:
 	- Quién se beneficia?
 	- Que se quiere?
 	- Cuál es su beneficio?
 	
-####Plantila de una Historia de Usuario:
-####Frente
+#### Plantila de una Historia de Usuario:
+#### Frente
 - **ID**: Identificador unívoco de la historia expresado como texto generalmente de la forma `verbo` `sustantivo`.
 
 - **TÍTULO**: Descripción de la historia de la forma: 
@@ -17,7 +17,7 @@
 	
 - **REGLAS DE NEGOCIO**: Conjunto de reglas, normas, políticas, etc. que condicionan el método de operación.
 
-####Reverso
+#### Reverso
 - **CRITERIOS DE ACEPTACIÓN:** Criterios por los cuales una historia cumple con las expectativas del cliente. Formato:
 	- **Escenario 1:** título del criterio
 		- _Dado_ `un contexto inicial`
@@ -35,7 +35,7 @@
 		- _Cuando_ `ocurre un evento`
 		- _Entonces_ `garantiza uno o más resultados`	
 
-###Conceptos
+### Conceptos
 > Una historia de usuario es una representación de un requisito de software escrito en una o dos frases utilizando el lenguaje común del usuario.
 
 > Una historia de usuario es una descripción corta y simple de un requerimiento de un sistema, que se escribe en lenguaje común del usuario y desde su perpectiva.
@@ -49,7 +49,7 @@ Al momento de implementar las historias, los desarrolladores deben tener la posi
 
 Estimaciones **mayores a dos semanas** son indicativo de que la historia es muy compleja y debe ser **dividida en varias historias**.
 
-###Características
+### Características
 **Independientes unas de otras:** De ser necesario, combinar las historias dependientes o buscar otra forma de dividir las historias de manera que resulten independientes.
 
 **Negociables:** La historia en sí misma no es lo suficientemente explícita como para considerarse un contrato, la discusión con los usuarios debe permitir esclarecer su alcance y éste debe dejarse explícito bajo la forma de pruebas de validación.
@@ -62,7 +62,7 @@ Estimaciones **mayores a dos semanas** son indicativo de que la historia es muy 
 
 **Verificables:** Las historias de usuario cubren requerimientos funcionales, por lo que generalmente son verificables. Cuando sea posible, la verificación debe automatizarse, de manera que pueda ser verificada en cada entrega del proyecto.
 
-###Criterios de Aceptación
+### Criterios de Aceptación
 - Un criterio de aceptación es el criterio por el cual se define si una historia de usuario fue desarrollada según la expectativa del Product Manager/Owner (como representante de los criterios del cliente) y se si puede dar como hecha.
 
 - Deben ser definidos durante la etapa inicial antes de la codificación, acompañan a la historia de usuario, porque complementan la historia de usuario y ayudan al equipo de desarrollo a entender mejor cómo se espera que el producto se comporte.
@@ -76,7 +76,7 @@ que el desarrollador.
 
 - Puede añadirse un número de escenario para identificar al criterio, asociado a la historia de usuario en cuestión.
 
-###Épicas
+### Épicas
 **Se denomina Épica a un conjunto de Historias de usuario que se agrupan por algún denominador común**
 
 - La épica representa un objetivo alcanzable que nace de la necesidad del cliente.
@@ -85,7 +85,7 @@ que el desarrollador.
 
 - La épica no es la funcionalidad.
 
-####Características
+#### Características
 
 - Suelen abarcar varios equipos de desarrollo.
 

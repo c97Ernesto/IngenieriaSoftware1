@@ -1,4 +1,4 @@
-###Problema 2: Posgrado
+### Problema 2: Posgrado.
 Suponga que trabaja en el área de sistemas de la Facultad de Informática y se le solicitó la automatización del pago decarreras de posgrado. Inicialmente se coordinó una reunión con el director del posgrado y se obtuvo la siguiente información:
 
 Ya que no se desea seguir cobrando el dinero en la secretaría, es necesario que los alumnos puedan pagar las carreras vía web. Como el director de posgrado no realiza tareas administrativas nos recomendó hablar con el secretario académico.
@@ -24,7 +24,7 @@ El requerimiento fue que el alumno ingrese a la web de posgrado y pueda registra
 
 ___
 
-####Frente
+#### Frente
 - ID: **Cargar Carrera de Posgrado.**
 
 - TITULO: Como Jefe Adminstrativo quiero realizar la carga de las carreras de posgrado para que los alumnos se puedan elegir a cual inscribirse.
@@ -32,7 +32,7 @@ ___
 - REGLAS DE NEGOCIO: 
 	- No se puede ingresar el nombre de una carrera que ya existe.
 	
-####Dorso
+#### Dorso
 - Criterios de aceptación (Cargar carrega de posgrado):
 - _Escenario 1: Carrera de Posgrado cargada con éxito._
 	- DADA la carrera "Ingeniería de Software" que no se encuentra cargada,
@@ -46,7 +46,7 @@ ___
 
 ___
 
-####Frente
+#### Frente
 - ID: **Registrar Alumno.**
 
 - TITULO: Como alumno quiero poder Registrarme en el sistema para poder elegir a que Carrera de Posgrado inscribirme.
@@ -54,7 +54,7 @@ ___
 - REGLAS DE NEGOCIO: 
 	- Nombre de usuario único y contraseña de más de 6 dígitos.
 	
-####Dorso
+#### Dorso
 - Criterios de aceptación (Registrar Alumno):
 - _Escenario 1: Registro exitoso del Alumno._
 	- DADO que el alumno con nombre de usuario "Juancito1" no se encuentra registrado,
@@ -72,7 +72,7 @@ ___
 	- ENTONCES el sistema informa que la contraseña es demasiado corta.
 ___
 
-####Frente
+#### Frente
 - ID: **Seleccionar Carrera de Posgrado.**
 
 - TITULO: Como Alumno quiero poder elegir una Carrera de Posgrado para poder inscribirme.
@@ -80,7 +80,7 @@ ___
 - REGLAS DE NEGOCIO: 
 	- 
 	
-####Dorso
+#### Dorso
 - Criterios de aceptación (Seleccionar Carrera de Posgrado):
 - _Escenario 1: Elección de Carrera de Posgrado exitosa._
 	- DADO que el alumno eligió la carrera
@@ -94,7 +94,7 @@ ___
 	
 ___
 
-####Frente
+#### Frente
 - ID: **Realizar Pago.**
 
 - TITULO: Como Alumno quiero poder realizar el pago de la inscripción a la Carrera de Posgrado seleccionada.
@@ -102,7 +102,7 @@ ___
 - REGLAS DE NEGOCIO: 
 	- Tiene que ser con tarjeta de crédito validada a través de un servicio del banco con el cual la universidad tiene convenio.
 	
-####Dorso
+#### Dorso
 - Criterios de aceptación (Realizar Pago):
 - _Escenario 1: Pago realizado con éxito._
 	- DADO el alumno con nombre de usuario "elBarto" eligió una Carrera de Posgrado a la cual inscribirse, ingresó un número de tarjeta de crédito "123123" válido y la tarjeta tiene fondos suficientes,

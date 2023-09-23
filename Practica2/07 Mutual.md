@@ -1,4 +1,4 @@
-###Problema 7: Mutual
+### Problema 7: Mutual.
 
 **ROL DE USUARIOS:**
 
@@ -11,7 +11,7 @@
 - Afiliar Persona	
 - Prestar Servicio
 
-####Frente
+#### Frente
 - ID: **Afiliar Persona.**
 
 - TITULO: Como Persona quiero afiliarme para recibir una prestación médica.
@@ -20,7 +20,7 @@
 	- Poseer tarjeta de crédito
 
 
-####Dorso
+#### Dorso
 - Criterios de aceptación (Afiliar Persona):
 - _Escenario 1: Afiliación exitosa._
 	- DADO que la persona posee tarjeta de crédito y ésta es válida
@@ -40,7 +40,7 @@
 ___
 
 
-####Frente
+#### Frente
 - ID: **Prestar Servicio.**
 
 - TITULO: Como ... quiero prestar un servicio para ...
@@ -48,7 +48,7 @@ ___
 - REGLAS DE NEGOCIO: 
 	
 	
-####Dorso
+#### Dorso
 - Criterios de aceptación ():
 - _Escenario 1: ._
 	- DADO 
@@ -62,7 +62,7 @@ ___
 
 ___
 
-####Frente
+#### Frente
 - ID: **.**
 
 - TITULO: Como bibliotecaria quiero verificar un pŕestamo para ver que no se encuentre vencido
@@ -71,7 +71,7 @@ ___
 	- Que el prestamo no se encuentre vencido.
 
 	
-####Dorso
+#### Dorso
 - Criterios de aceptación ():
 - _Escenario 1: ._
 	- DADA 
@@ -85,7 +85,7 @@ ___
 
 ___
 
-####Frente
+#### Frente
 - ID: **.**
 
 - TITULO:
@@ -93,7 +93,7 @@ ___
 - REGLAS DE NEGOCIO: 
 
 	
-####Dorso
+#### Dorso
 - Criterios de aceptación ():
 - _Escenario 1: ._
 	- DADA 
@@ -105,4 +105,4 @@ ___
 	- CUANDO
 	- ENTONCES
 
-___
+

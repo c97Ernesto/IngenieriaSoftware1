@@ -1,4 +1,4 @@
-###Problema 3: Contratos
+### Problema 3: Contratos.
 Suponga que trabaja en un grupo en el área de sistemas de una organización y está por comenzar un nuevo proyecto para desarrollar un sistema que depende del departamento contable.
 
 El sistema deberá administrar los contratos realizado con terceros. En una de las reuniones con el jefe de departamento nos dijo que él no usará el sistema pero que recibirá listados del personal contratado ya que deberá firmarlos para elevarlos a las autoridades.
@@ -21,9 +21,10 @@ Por último el empleado de rendiciones será el responsable de imprimir los list
 - Verificar CUIT/Contactar con servidor de AFIP?.
 - Evaluar Minuta .
 - Aprobar Minuta. ?
+
 ___
 
-####Frente
+#### Frente
 - ID: **Confeccionar Minuta.**
 
 - TITULO: Como Empleado de Mesa quiero confeccionar una minuta para generar un contrato.
@@ -31,7 +32,7 @@ ___
 - REGLAS DE NEGOCIO:
 	- Los montos de los mismos no pueden superar los $25.000 y que la duración debe ser como máximo de 6 meses.
 
-####Dorso
+#### Dorso
 - Criterios de aceptación (Confeccionar Minuta):
 
 - _Escenario 1: Minuta confeccionada con éxito._
@@ -51,7 +52,7 @@ ___
 
 ___
 
-####Frente
+#### Frente
 - ID: **Verificar CUIT.**
 
 - TITULO: Como Empleado de Rendiciones quiero contactarme con el servicio de la AFIP para que ésta me valide el CUIT del usuario.
@@ -60,7 +61,7 @@ ___
 - REGLAS DE NEGOCIO: 
 	- El sistema le tiene que mandar un token (código que identificará de manera única a la aplicación) y el CUIT a un servidor de la AFIP.
 	
-####Dorso
+#### Dorso
 - Criterios de aceptación (Verificar CUIT):
 
 - _Escenario 1: CUIT verificado exitosamente._
@@ -80,7 +81,7 @@ ___
 	
 ___
 
-####Frente
+#### Frente
 - ID: **Evaluar Minuta.**
 
 - TITULO: Como Empleado de Rendiciones quiero evaluar las minutas para determinar su aprobación.
@@ -88,7 +89,7 @@ ___
 - REGLAS DE NEGOCIO:
 	- Número de Minuta válido.
 
-####Dorso
+#### Dorso
 - Criterios de aceptación (Evaluar Minuta):
 
 - _Escenario 1: Evaluación de la Minuta exitosa._
@@ -103,7 +104,7 @@ ___
 	
 ___
 
-####Frente
+#### Frente
 - ID: **Aprobar Minuta.**
 
 - TITULO: Como Empleado de Rendiciones quiero aprobar la Minuta para su posterior firma.?
@@ -112,7 +113,7 @@ ___
 	- La persona a contratar no tiene que tener más de 3 minutas aprobadas
 	- CUIT tiene que estar habilitado (Verificar CUIT).	
 	
-####Dorso
+#### Dorso
 - Criterios de aceptación (Aprobar Minuta):
 - _Escenario 1: Minuta aprobada con éxito._
 	- DADA la evaluación correcta de la minuta, la verificación correcta del CUIT y que la persona no tiene más de 3 Minutas aprobadas,

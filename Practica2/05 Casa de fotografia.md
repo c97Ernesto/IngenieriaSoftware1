@@ -1,4 +1,4 @@
-###Problema 5: Casa de Fotografía 
+### Problema 5: Casa de Fotografía.
 
 **ROL DE USUARIOS:**
 
@@ -14,7 +14,7 @@
 - Registrar retiro	
 
 
-####Frente
+#### Frente
 - ID: **Registrar Persona**
 
 - TITULO: Como persona quiero registrarme en el sistema para subir fotos
@@ -22,7 +22,7 @@
 - REGLAS DE NEGOCIO:
 	- email único
 
-####Dorso
+#### Dorso
 - Criterios de aceptación (Registrar Persona):
 
 - _Escenario 1: Registro exitoso._
@@ -37,7 +37,7 @@
 
 ___
 
-####Frente
+#### Frente
 - ID: **Subir fotos.**
 
 - TITULO: Como usuario quiero subir fotos para poder pagarlas
@@ -46,7 +46,7 @@ ___
 	- Haberse registrado en el sitio.
 	- Máximo de 50 fotos.
 	
-####Dorso
+#### Dorso
 - Criterios de aceptación (Subir fotos):
 
 - _Escenario 1: Fotos subidas con éxito._
@@ -65,7 +65,7 @@ ___
 	- ENTONCES el sistema informa que la imagen seleccionada no tiene el formato correcto.
 ___
 
-####Frente
+#### Frente
 - ID: **Realizar pago.**
 
 - TITULO: Como usuario quiero hacer el pago de las imágenes para retirarlas
@@ -74,7 +74,7 @@ ___
 	- Tarjeta de crédito.
 	- Validación a través de banco.
 
-####Dorso
+#### Dorso
 - Criterios de aceptación (Realizar Pago):
 
 - _Escenario 1: Pago realizado con éxito._
@@ -94,7 +94,7 @@ ___
 	
 ___
 
-####Frente
+#### Frente
 - ID: **Registrar retiro.**
 
 - TITULO: Como empleado quiero registrar el retiro de las fotos
@@ -102,7 +102,7 @@ ___
 - REGLAS DE NEGOCIO: 
 	- Registrar código único.
 	
-####Dorso
+#### Dorso
 - Criterios de aceptación (Registrar retiro):
 - _Escenario 1: Registro de retiro exitoso._
 	- DADO que el empleado registra el código único de retiro de imágenes 
@@ -118,3 +118,6 @@ ___
 	- DADO 
 	- CUANDO
 	- ENTONCES
+
+
+
