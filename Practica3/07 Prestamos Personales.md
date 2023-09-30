@@ -1,5 +1,9 @@
 ##Problema 7: Préstamos Personales.
 
+![ejercicio1](drawios/ejercicio07_P3.drawio.png)
+
+___
+
 **Actores:**
 
 - Cliente
@@ -92,26 +96,39 @@ ___
 
 - **Acción del Actor:**
 
-	- Paso 2: el servidor externo verifica el código
+	- Paso 2: el servidor externo acepta la conexión
 	
-
+	- Paso 3: el servidor externo solicita el código de seguridad
 	
-
+	- Paso 5: el servidor externo valida el código de seguridad
+	
+	- Paso 6: el servidor externo solicita los datos de la persona: nombre, apellido, CUIT/CUIL
+	
+	- Paso 8: el servidor externo valida los datos de la personal
+	
+	- Paso 9: el servidor externo retorna el estado de la solicitud
 	
 
 - **Acciones del Sistema:**
 
-	- Paso 1: El Sistema envía el código de seguridad
+	- Paso 1: El Sistema establece conexión con el servidor externo
 	
-
+	- Paso 4: el sistema envía el código de seguridad.
 	
-
+	- Paso 7: el sistema envía la solicitud de los datos
+	
+	- Paso 10: el sistema recibe que la persona no figura en el Veraz
+	
+	- Paso 11: se cierra la conexión con el servidor externo
+	
 
 **Curso Alterno:**
 
+- Paso alternativo 10: La persona figura en el Veraz. Se notifica.
+
 **Postcondición:**
 
-- 
+- Se virifica si la persona es deudora
 
 ___
 
@@ -121,7 +138,7 @@ ___
 
 **Descripción:** 
 
-
+- Este Caso de Uso describe el evento en el que un Cliente adelante cuotas de su préstamo
 
 **Actores:** 
 
@@ -139,7 +156,7 @@ ___
 	
 	- Paso 3: el cliente selecciona el préstamo que desea pagar
 	
-	- Paso 6: el cliente ingresa la cantidad de coutas que desea adelantar
+	- Paso 6: el cliente ingresa la cantidad de cuotas que desea adelantar
 	
 	- Paso 8: el cliente selecciona la cuenta
 
@@ -175,6 +192,8 @@ ___
 
 **Descripción:** 
 
+- Este Caso de Uso describe el evento en el que un empleado hace la cancelación de un préstamo
+
 **Actores:** 
 
 - Empleado
@@ -191,21 +210,42 @@ El mismo Cliente es el que realiza la cancelación del préstamo
 
 	- Paso 1: El Empleado selecciona la opción de "Cancelar Préstamo"
 	
-	- 
+	- Paso 2: el empleado ingresa el dni del Cliente
+	
+	- Paso 5: el empleado selecciona un préstamo
+	
+	- Paso 6: el empleado selecciona una cuenta
 
 - **Acciones del Sistema:**
 
-	- Paso 2: el sistema solicita el DNI del cliente.
+	- Paso 3: el sistema solicita el DNI del cliente.
 	
-	- 
+	- Paso 4: el sistema lista los préstamos
+	
+	- Paso 6: el sistema verica que hayan pasado más de 9 meses
+	
+	- Paso 7: el sistema lista las cuentas del cliente
+	
+	- Paso 8: el sistema verifica que la cuenta tenga saldo
+	
+	- Paso 9: el sistema registra la cancelación del préstamo
+	
 
 **Curso Alterno:**
 
+- Paso alternativo 6: el préstamo no cumple los 9 meses. Se notifica y se termina el CU.
+
+- Paso alternativo 8: la cuenta no tiene saldo suficiente. Se notifica y se retorna al paso 7.
+
 **Postcondición:**
+
+- Se cancela un préstamo.
 
 ___
 
 **Nombre del caso de uso:**
+
+- Iniciar Sesión
 
 **Descripción:** 
 
@@ -235,7 +275,10 @@ ___
 
 **Nombre del caso de uso:**
 
+- Cerrar Sesión
+
 **Descripción:** 
+
 
 **Actores:** 
 

@@ -2,6 +2,8 @@
 
 ![ejercicio1](./drawios/ejercicio01_P3.drawio.png)
 
+___
+
 **Actores:**
 
 - Usuarios.

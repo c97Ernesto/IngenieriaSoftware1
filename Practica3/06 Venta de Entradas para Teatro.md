@@ -1,6 +1,6 @@
 ## Problema 06: Venta de Entradas para Teatro.
 
-![ejercicio1](./drawios/ejercicio06_P3.drawio.png)
+![ejercicio1](drawios/ejercicio06_P3.drawio.png)
 
 **Actores:**
 

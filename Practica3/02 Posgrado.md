@@ -2,6 +2,8 @@
 
 ![ejercicio1](./drawios/ejercicio02_P3.drawio.png)
 
+___
+
 **Actores:**
 
 - Empleado administrativo
