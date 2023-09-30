@@ -1,6 +1,6 @@
 ## Problema 2: Posgrado.
 
-![ejercicio1](./ejercicio02_P3.drawio.png)
+![ejercicio1](./drawios/ejercicio02_P3.drawio.png)
 
 **Actores:**
 

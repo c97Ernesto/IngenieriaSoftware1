@@ -1,6 +1,6 @@
 ## Problema 1: Alquiler de mobiliario.
 
-![ejercicio1](./ejercicio01_P3.drawio.png)
+![ejercicio1](./drawios/ejercicio01_P3.drawio.png)
 
 **Actores:**
 
