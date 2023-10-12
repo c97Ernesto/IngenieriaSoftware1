@@ -16,6 +16,8 @@ Si opta por registrar el presente mediante la huella dactilar sólo debe apoyar 
 
 En cualquiera de los 2 casos si el ingreso es exitoso se muestra en el display la fecha y el horario de entrada y un mensaje de éxito, caso contrario, se visualiza un mensaje de error y se emite un pitido.
 
+![ejercicio5](./drawios/ejercicio05_P4.drawio.png)
+
 ## Ejercicio 6: Se desea modelar el funcionamiento de un personaje para un juego electrónico.
 El personaje es un guardia medieval de un castillo. Su objetivo es vigilar el castillo y eliminar enemigos que puedan aparecer.
 

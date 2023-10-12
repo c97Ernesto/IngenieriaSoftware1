@@ -47,7 +47,13 @@
 
 	- Verbo en infinitivo con sustantivo en función del sistema (no confundir con acciones del usuario. Ej: "presionar tecla" no es algo que hace el sistema).
 
+### Aspectos del modelado a tener en cuenta:
 
+El modelado se realiza desde el punto de vista del sistema y **no** desde el punto de vista del usuario.
+
+Ej: "Presionar botón" es una acción. Pero es una acción que no puede hacer ni controlar el sistema. sinó que está bajo el control del usuario.
+
+Desde el sistema las acciones de un usuario se modelan como eventos. Ej: se presionó una tecla.
 
 
 
