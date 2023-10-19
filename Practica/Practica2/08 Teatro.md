@@ -20,7 +20,6 @@
 - TITULO: Como usuario quiero seleccionar una opción para comprar una entrada.
 
 - REGLAS DE NEGOCIO: 
-	- El pago se realiza con tarjeta de crédito.
 
 
 #### Dorso
@@ -28,7 +27,7 @@
 - _Escenario 1: Selección exitosa._
 	- DADO que hay opciones disponibles y lugares disponibles
 	- CUANDO el usuario selecciona la opción, ingresa su DNI "123123", la cantidad de lugares que desea "3", y selecciona la opción "Pagar",
-	- ENTONCES el sistema lo redirecciona al pago.
+	- ENTONCES el sistema registra la opción seleccionada.
 	
 - _Escenario 2: Selección fallida porque no hay opciones disponibles._ 
 	- DADO que no hay opciones disponibles

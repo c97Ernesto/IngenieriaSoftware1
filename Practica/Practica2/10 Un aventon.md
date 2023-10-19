@@ -54,17 +54,17 @@ ___
 #### Dorso
 - Criterios de aceptación (Dar de alta viaje):
 - _Escenario 1: Alta exitoso._
-	- DADO que el usuario "JuanCa@gmail.com" que no adeuda calificaciones, quiere publicar un viaje el día "23/12/23" a las "12:12". 
+	- DADO que el usuario "User1@gmail.com" que no adeuda calificaciones, quiere publicar un viaje el día "23/12/23" a las "12:12". 
 	- CUANDO el usuario ingresa: "23/12/23", "12:12", "Corsa", y selecciona "Publicar viaje",
 	- ENTONCES el sistema informa que el viaje se publicó exitosamente.
 	
 - _Escenario 2: Alta fallido por superponerse con otro viaje._ 
-	- DADO que el usuario "Lalo@gmail.com" que no adeuda calificaciones, quiere publicar un viaje el día "01/01/24" a las "13:13" pero éste se le superpone con otro viaje.
+	- DADO que el usuario "User2@gmail.com" que no adeuda calificaciones, quiere publicar un viaje el día "01/01/24" a las "13:13" pero éste se le superpone con otro viaje.
 	- CUANDO el usuario ingresa: "01/01/24", "13:13",
 	- ENTONCES el sistema informa que ya tenía un viaje programado para esa fecha y hora.
 
 - _Escenario 3: Alta fallido por adeudar calificaciones._ 
-	- DADO que el usuario "Lalo@gmail.com" que adeuda calificaciones, quiere publicar un viaje el día "01/01/24" a las "13:13".
+	- DADO que el usuario "User2@gmail.com" que adeuda calificaciones, quiere publicar un viaje el día "01/01/24" a las "13:13".
 	- CUANDO el usuario ingresa: "01/01/24", "13:13",
 	- ENTONCES el sistema informa que no puede publicar viaje porque adeuda calificaciones.
 
@@ -99,19 +99,22 @@ ___
 - TITULO: Como usuario quiero calificar a un usuario ...
 
 - REGLAS DE NEGOCIO: 
-	- Piloto califica a los copilotos.
-	- Copilotos califican al piloto.
+	
 	
 #### Dorso
 - Criterios de aceptación ():
-- _Escenario 1: ._
-	- DADA 
-	- CUANDO
-	- ENTONCES
+- _Escenario 1: Calificación exitosa positivamente._
+	- DADO que el usuario "User1@gmail" viajó con "User2@gmail",
 	
-- _Escenario 2:._ 
-	- DADA 
-	- CUANDO
-	- ENTONCES
+	- CUANDO el usuario "User1@gmail" califica positivamente al usuario "User2@gmail".
+	
+	- ENTONCES el sistema suma un punto de reputación al "User2@gmail".
+	
+- _Escenario 2: Calificación exitosa negativamente._ 
+	- DADO que el usuario "User2@gmail" viajó con "User1@gmail",
+	
+	- CUANDO el usuario "User2@gmail" califica negativamente al usuario "User1@gmail".
+	
+	- ENTONCES el sistema suma un punto de reputación al "User2@gmail".
 
 

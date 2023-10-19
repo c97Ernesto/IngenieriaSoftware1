@@ -1,4 +1,4 @@
-###Problema 6: Biblioteca.
+### Problema 6: Biblioteca.
 
 **ROL DE USUARIOS:**
 
@@ -12,9 +12,6 @@
 - Prestar libros.
 - Verificar pŕestamo.	
 
-Lo que hace la bibliotecaria lo terminaría haciendo el sistema
-
-el sistema suspendería al socio
 
 #### Frente
 - ID: **Asociar Alumnos.**
@@ -56,14 +53,19 @@ ___
 #### Dorso
 - Criterios de aceptación (Prestar Libros):
 - _Escenario 1: Prestación exitosa._
-	- DADO que el socio
-	- CUANDO 
-	- ENTONCES
+	- DADO que el socio se encuentra habilitado,
+	- CUANDO la bibliotecaria ingresa el DNI: "123123" y éste se encuentra habilitado,
+	- ENTONCES el sistema informa que es socio se encuentra habilitado y registra el préstamo del libro.
 	
-- _Escenario 2:._ 
-	- DADA 
-	- CUANDO
-	- ENTONCES
+- _Escenario 2: Error al prestar libro por socio inhabilitado por poseer más de tres préstamos vigentes._ 
+	- DADO que el socio con DNI 123123 posee más de tres préstamos,
+	- CUANDO la bibliotecaria ingresa: "123123" y éste se encuentra inhabilitado por poseer más de tres préstamos.
+	- ENTONCES el sistema informa que el socio está inhabilitado por poseer más de tres préstamos.
+
+- _Escenario 3: Error al prestar libro por socio inhabilitado por tener préstamos vencidos._ 
+	- DADO que el socio con DNI 123123 tiene préstamos vencidos,
+	- CUANDO la bibliotecaria ingresa: "123123" y este se encuentra inhabilitado por tener préstamos vencidos.
+	- ENTONCES el sistema informa que el socio se encuentra inhabilitado por tener préstamos vencidos.
 
 ___
 
@@ -72,42 +74,18 @@ ___
 
 - TITULO: Como bibliotecaria quiero verificar un pŕestamo para ver que no se encuentre vencido
 
-- REGLAS DE NEGOCIO: 
-	- Que el prestamo no se encuentre vencido.
-
+- REGLAS DE NEGOCIO
+	-
 	
 #### Dorso
 - Criterios de aceptación (Verificar Pŕestamo):
-- _Escenario 1: Verificación del préstamo exitoso._
-	- DADO que el asociado hace la devolución del préstamo en correcto estado
-	- CUANDO la bibliotecaria verifica el préstamo,
-	- ENTONCES 
+- _Escenario 1: Verificación del préstamo exitoso, préstamo vencido._
+	- DADO que el socio hace la devolución del préstamo y este se encuentra vencido,
+	- CUANDO la bibliotecaria ingresa el DNI: "123123",
+	- ENTONCES el sistema informa que el préstamo se encuentra vencido, y registra una suspención de 15 días.
 	
-- _Escenario 2:._ 
-	- DADA 
-	- CUANDO
-	- ENTONCES
+- _Escenario 2: Verificación del préstamo exitoso, préstamo no vencido._ 
+	- DADO que el socio hace la devolución del préstamo y este no se encuentra vencido,
+	- CUANDO la bibliotecaria ingresa el DNI: "234234",
+	- ENTONCES el sistema registra la devolución del préstamo.
 
-___
-
-#### Frente
-- ID: **.**
-
-- TITULO:
-
-- REGLAS DE NEGOCIO: 
-
-	
-#### Dorso
-- Criterios de aceptación ():
-- _Escenario 1: ._
-	- DADA 
-	- CUANDO
-	- ENTONCES
-	
-- _Escenario 2:._ 
-	- DADA 
-	- CUANDO
-	- ENTONCES
-
-___

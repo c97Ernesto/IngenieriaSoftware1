@@ -13,7 +13,7 @@
 - **ID**: Identificador unívoco de la historia expresado como texto generalmente de la forma `verbo` `sustantivo`.
 
 - **TÍTULO**: Descripción de la historia de la forma: 
-	- **Como** `rol` **quiero** `algo` **para poder** `beneficio`
+	- **Como** _rol_ **quiero** _algo_ **para poder** _beneficio_
 	
 - **REGLAS DE NEGOCIO**: Conjunto de reglas, normas, políticas, etc. que condicionan el método de operación.
 
