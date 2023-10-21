@@ -68,7 +68,7 @@ ___
 	- ENTONCES el sistema informa que el DNI "0303456" excede el límite de entradas que puede reservar.
 	
 - _Escenario 3: Reservación fallida por no encontrarse la obra de la persona._ 
-	- DADO que en la grilla no se encuentra la obra de la persona y la persona con "0303456" no posee entradas,
+	- DADO que en la grilla no se encuentra la obra de la persona y la persona no posee entradas,
 	- CUANDO el Empleado ingresa: "Manuelita", "23/12/23", "0303456", "Juan".
 	- ENTONCES el sistema informa que no hay funciones con ese nombre disponibles.
 
@@ -82,7 +82,7 @@ ___
 - TITULO: Como Usuario quiero elegir una obra para comprar entradas.
 
 - REGLAS DE NEGOCIO: 
-	- Tarjeta autorizada
+	- Pagar con tarjeta de crédito.
 	
 	
 #### Dorso
@@ -119,7 +119,7 @@ ___
 
 	
 #### Dorso
-- Criterios de aceptación ():
+- Criterios de aceptación (Comprar entradas Personalmente):
 - _Escenario 1: Compra exitosa._
 	- DADO que se encuentra la obra del usuario, hay suficientes lugares y el usuario tiene la tarjeta autorizada.
 	- CUANDO el Empleado ingresa: "Manuelita2", "0303456", 7, elige la obra y selecciona la opción de "Pagar".
