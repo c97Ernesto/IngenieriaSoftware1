@@ -1,6 +1,6 @@
 ##Problema 7: Préstamos Personales.
 
-![ejercicio1](drawios/ejercicio07_P3.drawio.png)
+![ejercicio7](drawios/ejercicio07_P3.drawio.png)
 
 ___
 
@@ -205,8 +205,6 @@ ___
 **Curso Normal:**
 
 - **Acción del Actor:**
-
-El mismo Cliente es el que realiza la cancelación del préstamo
 
 	- Paso 1: El Empleado selecciona la opción de "Cancelar Préstamo"
 	
