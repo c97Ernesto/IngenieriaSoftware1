@@ -1,5 +1,7 @@
 ## Problema 08: Pago de Impuestos y Servicios.
 
+![ejercicio8](./drawios/ejercicio08_P3.drawio.png)
+
 **Actores:**
 
 - Empleado
@@ -14,6 +16,7 @@
 
 - Registrar Pagos
 
+___
 
 #### Nombre del caso de uso:
 
@@ -67,6 +70,7 @@
 
 - Se cobra una Factura 
 
+___
 
 #### Nombre del caso de uso:
 
@@ -112,6 +116,7 @@
 
 - Se recuperan los datos de una factura 
 
+___
 
 #### Nombre del caso de uso:
 
@@ -144,14 +149,22 @@
 	- Paso 5: el sistema recupera los cobros y transacciones del día
 	
 	- Paso 6: el sistema ejecuta el Caso de Uso "Enviar Cobros y Transacciones"
+	
+	- Paso 7: el sistema informa el el registro de los pagos y transacciones
 
 **Curso Alterno:**
 
 - Paso alternativo 4: la clave maestra es incorrecta. Se notifica y finaliza el CU.
 
+- Paso alternativo 5: no se pueden recuperar los pagos y transacciones porque ya se han recuperados. Se informa y finaliza el CU.
+
+- Paso alternativo 7: no se enviaron los pagos y transacciones. Se notifica y finaliza el CU.
+
 **Postcondición:**
 
--
+- Se registran los pagos y transacciones.
+
+___
 
 #### Nombre del caso de uso:
 

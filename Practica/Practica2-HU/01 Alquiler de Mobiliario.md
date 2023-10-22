@@ -19,26 +19,30 @@ cliente para hacer efectivo el alquiler.
 - Realizar reserva.
 - Realizar Pago.
 
+___
+
 #### Frente
 - ID: Cargar Mueble
 
-- TITULO: Como encargado quiero dar de alta un mueble para que se pueda alquilar
+- TITULO: Como encargado quiero dar de alta un mueble para alquilarlo.
 
 - REGLAS DE NEGOCIO:
 	- No debe existir previamente el código del mueble a cargar.
 	
-#### Dorso
+**Dorso**
 - Criterios de aceptación (Cargar Mueble):
+
 - _Escenario 1: Carga de Mueble exitosa_
-	- DADO que el código de inventario "123123" no se encuentra en el 	sistema, 
-	- CUANDO el encargado ingresa: "123123", "mesa", "1/1/2000", "1/1/2020", "libre", "20", 
-	- ENTONCES se realiza la carga del mueble.
+	- DADO que el código de inventario "123123" no se encuentra en el sistema, 
+	- CUANDO el encargado ingresa: "123123", "mesa", "1/1/2000", "1/1/2020", "libre", "20", y selecciona "Cargar Mueble".
+	- ENTONCES el sistema realiza la carga del mueble.
 	
 - _Escenario 2: Carga de Mueble fallida por código existente_
 	- DADO que el código de inventario "123123" se encuentra en el 	sistema, 
-	- CUANDO el encargado ingresa: "123123", "mesa pin pong", "1/1/2001", "1/1/2020", "libre", "30", 
+	- CUANDO el encargado ingresa: "123123", "mesa pin pong", "1/1/2001", "1/1/2020", "libre", "30", y selecciona "Cargar Mueble".
 	- ENTONCES el sistema informa que el Código de Mueble ingresado ya 	existe.
 
+___
 	
 #### Frente
 - ID: Realizar reserva
@@ -48,8 +52,9 @@ cliente para hacer efectivo el alquiler.
 - REGLAS DE NEGOCIO:
 	- Una reserva tiene que incluir como mínimo 3 muebles
 
-#### Dorso
+**Dorso**
 - Criterios de aceptación (Realizar reserva):
+
 - _Escenario 1: Se realiza la reserva con éxito_
 	- DADO que el usuario quiere hacer la reserva de 4 muebles, superando el mínimo pedido,
 	- CUANDO el usuario ingresa "2/2/2022", "Mi casa", "2", "4"
@@ -60,6 +65,7 @@ cliente para hacer efectivo el alquiler.
 	- CUANDO el usuario ingresa "2/2/2022", "Mi casa", "2", "2"
 	- ENTONCES el sistema informa que la cantidad mínima de muebles no fue superada.
 	
+___
 
 #### Frente
 - ID: Realizar Pago.
@@ -70,7 +76,7 @@ cliente para hacer efectivo el alquiler.
 	- Validar tarjeta de crédito.
 	- Abonar el 20% del total de los muebles.
 	
-#### Dorso
+**Dorso**
 - Criterios de aceptación (Realizar Pago):
 
 - _Escenario 1: Pago realizado con éxito_
@@ -93,4 +99,3 @@ cliente para hacer efectivo el alquiler.
 	- CUANDO el cliente ingresa el número de tarjeta "234234" y selecciona "pagar",
 	- ENTONCES el sistema informa que la tarjeta de crédito no tiene fondos suficientes.
 	
-

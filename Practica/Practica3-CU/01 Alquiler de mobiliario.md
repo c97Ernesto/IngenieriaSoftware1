@@ -20,7 +20,7 @@ ___
 
 ___
 
-**Nombre del caso de uso:**
+#### Nombre del caso de uso:
 
 - Iniciar Sesión.
 
@@ -62,7 +62,7 @@ ___
 
 ___
 
-**Nombre del caso de uso:**
+#### Nombre del caso de uso:
 
 - Cerrar Sesión.
 
@@ -102,7 +102,7 @@ ___
 
 ___
 
-**Nombre del caso de uso:** 
+#### Nombre del caso de uso:
 
 - Cargar muebles
 
@@ -143,7 +143,7 @@ ___
 
 ___
 
-**Nombre del caso de uso:**
+#### Nombre del caso de uso:
 
 - Reservar alquiler.
 
@@ -183,9 +183,10 @@ ___
 **Postcondición:**
 
 - Se hace la reserva de un alquiler.
+
 ___
 
-**Nombre del caso de uso:**
+#### Nombre del caso de uso:
 
 - Pagar con tarjeta.
 
