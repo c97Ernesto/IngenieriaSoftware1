@@ -1,6 +1,6 @@
 ## Problema 2: Posgrado.
 
-![ejercicio1](./drawios/ejercicio02_P3.drawio.png)
+![ejercicio2](./drawios/ejercicio02_P3.drawio.png)
 
 ___
 
@@ -13,13 +13,15 @@ ___
 **Casos de Usos**
 
 - Cargar Carrera.
+- Realizar Inscripción.
+- Pagar con Tarjeta.
 - Registrar Alumno.
 - Iniciar Sesión.
 - Cerrar Sesión.
-- Pagar con Tarjeta.
+
 ___
 
-**Nombre del caso de uso:**
+#### Nombre del caso de uso:
 
 - Cargar Carrera.
 
@@ -69,122 +71,7 @@ ___
 
 **Nombre del caso de uso:**
 
-- Registrar Alumno
-
-**Descripción:** 
-
-- Este Caso de Uso describe el evento en el que un Alumno no registrado se registra en el sistema.
-
-**Actores:**
-
-- Alumno no registrado
-
-**Precondiciones:**
-
--
-
-**Curso Normal:**
-
-- **Acción del Actor:**
-
-	- Paso 1: El alumno no registrado selecciona la opción de "Registrarse"
-	
-	- Paso 3: el alumno no registrado ingresa los datos solicitados
-	
-	- Paso 5: el alumno no registrado completa el nombre usuario y contraseña
-
-- **Acciones del Sistema:**
-
-	- Paso 2: el sistema solicita los datos de registro del alumno.
-	
-	- Paso 4: el sistema solicita nombre de usuario único y contraseña de más de 6 dígitos
-	
-	- Paso 6: el sistema verifica que el nombre de usuario sea único y la contraseña contenga más de 6 dígitos
-	
-	- Paso 7: se registra el alumno.
-
-**Curso Alterno:**
-
-- Paso alternativo 6: Ya existe el nombre de usuario ingresado. Se notifica y se vuelve al paso 4.
-
-- Paso alternativo 6: La contraseña no contiene más de 6 dígitos. Se notifica y se vuelve al paso 4.
-
-**Postcondición:**
-
-- El alumno se registra
-___
-
-**Nombre del caso de uso:**
-
-- Iniciar Sesión.
-
-**Descripción:** 
-
-- Especifica el modo en el que un Alumno registrado inicia sesión con su nombre de usuario y contraseña.
-
-**Actores:** 
-
-- Alumno registrado
-
-**Precondiciones:**
-
-**Curso Normal:**
-
-- **Acción del Actor:**
-
-	-
-	
-	-
-
-- **Acciones del Sistema:**
-
-	-
-	
-	-
-
-**Curso Alterno:**
-
-**Postcondición:**
-
-___
-
-**Nombre del caso de uso:**
-
-- Cerrar Sesión.
-
-**Descripción:** 
-
-- Describe el evento en el que un usuario registrado cierra la sesión.
-
-**Actores:** 
-
-- Alumno registrado
-
-**Precondiciones:**
-
-**Curso Normal:**
-
-- **Acción del Actor:**
-
-	-
-	
-	-
-
-- **Acciones del Sistema:**
-
-	-
-	
-	-
-
-**Curso Alterno:**
-
-**Postcondición:**
-
-___
-
-**Nombre del caso de uso:**
-
-- Inscribirse a Carrera
+- Realizar Inscripción.
 
 **Descripción:** 
 
@@ -243,7 +130,7 @@ ___
 
 **Precondiciones:**
 
-- Haber ejecutado el Caso de Uso "Inscribirse a Carrera"
+- Haber ejecutado el Caso de Uso "Realizar Inscripción".
 
 **Curso Normal:**
 
@@ -289,4 +176,135 @@ ___
 **Postcondición:**
 
 - Se completa el pago y se hace la inscripción
+
 ___
+
+#### Nombre del caso de uso:
+
+- Registrar Alumno
+
+**Descripción:** 
+
+- Este Caso de Uso describe el evento en el que un Alumno no registrado se registra en el sistema.
+
+**Actores:**
+
+- Alumno no registrado
+
+**Precondiciones:**
+
+-
+
+**Curso Normal:**
+
+- **Acción del Actor:**
+
+	- Paso 1: El alumno no registrado selecciona la opción de "Registrarse"
+	
+	- Paso 3: el alumno no registrado ingresa los datos solicitados
+	
+	- Paso 5: el alumno no registrado completa el nombre usuario y contraseña
+
+- **Acciones del Sistema:**
+
+	- Paso 2: el sistema solicita los datos de registro del alumno.
+	
+	- Paso 4: el sistema solicita nombre de usuario único y contraseña de más de 6 dígitos
+	
+	- Paso 6: el sistema verifica que el nombre de usuario sea único y la contraseña contenga más de 6 dígitos
+	
+	- Paso 7: se registra el alumno.
+
+**Curso Alterno:**
+
+- Paso alternativo 6: Ya existe el nombre de usuario ingresado. Se notifica y se vuelve al paso 4.
+
+- Paso alternativo 6: La contraseña no contiene más de 6 dígitos. Se notifica y se vuelve al paso 4.
+
+**Postcondición:**
+
+- Se crea una cuenta nueva.
+
+___
+
+#### Nombre del caso de uso:
+
+- Iniciar Sesión.
+
+**Descripción:** 
+
+- Especifica el modo en el que un Alumno registrado inicia sesión con su nombre de usuario y contraseña.
+
+**Actores:** 
+
+- Alumno registrado
+
+**Precondiciones:**
+
+- 
+
+**Curso Normal:**
+
+- **Acción del Actor:**
+
+	- Paso 1: El Alumno Registrado selecciona la opción de "Iniciar Sesión"
+	
+	- Paso 3: el alumno ingresa el nombre de usuario y contraseña
+
+- **Acciones del Sistema:**
+
+	- Paso 2: el sistema solicita nombre de usuario y contraseña
+	
+	- Paso 4: el sistema verifica los datos ingresados
+
+**Curso Alterno:**
+
+- Paso alternativo 4: el nombre de usuario no es correcto. Se informa y finaliza el CU.
+
+- Paso alternativo 4: la contraseña ingresada no es correcta. Se informa y finaliza el CU.
+
+**Postcondición:**
+
+- Se registra el inicio de sesión y se habilitan las funciones del alumno registrado
+
+___
+
+#### Nombre del caso de uso:
+
+- Cerrar Sesión.
+
+**Descripción:** 
+
+- Describe el evento en el que un usuario registrado cierra la sesión.
+
+**Actores:** 
+
+- Alumno registrado
+
+**Precondiciones:**
+
+- El Alumno Registrado debe tener la sesión iniciada
+
+**Curso Normal:**
+
+- **Acción del Actor:**
+
+	- Paso 1: El Alumno Registrado selecciona la opción de "Cerrar Sesión"
+	
+	- Paso 3: el alumno confirma el cierre de la sesión
+
+- **Acciones del Sistema:**
+
+	- Paso 2: el sistema solicita la confirmación del cierre de Sesión al alumno
+	
+	- Paso 4: el sistema cierra la sesión del alumno y deshabilita todas las funciones del alumno registrado.
+
+**Curso Alterno:**
+
+- Paso alternativo 3: el alumno cancela la operación. Fin de CU
+
+**Postcondición:**
+
+- Se cierra sesión y se deshabilitan todas las funciones del Usuario Registrado.
+
+

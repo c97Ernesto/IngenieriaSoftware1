@@ -1,28 +1,27 @@
 ## Problema 4: Máquina de reciclado.
 
+![ejercicio4](./drawios/ejercicio04_P3.drawio.png)
+
 **Actores:**
 
 - Persona
-
 - Operador
 
 **Casos de Usos**
 
-- Reciclar material.
-
-- Solicitar listado.
-
-- Actualizar montos
+- Reciclar Material.
+- Solicitar Listado.
+- Actualizar Montos.
 
 ___
 
-**Nombre del caso de uso:**
+#### Nombre del caso de uso:
 
-- Reciclar material
+- Reciclar material.
 
 **Descripción:** 
 
-- Este Caso de Uso describe el evento en el que una persona recicla un material
+- Este Caso de Uso describe el evento en el que una persona recicla un material.
 
 **Actores:** 
 
@@ -45,20 +44,24 @@ ___
 	- Paso 3: el sistema registra el peso del material
 	
 	- Paso 4: el sistema registra el material reciclado
+	
+	- Paso 5: el sistema imprime un recibo con el monto total de lo reciclado.
 
 **Curso Alterno:**
 
 - Paso alternativo 2: el sistema no detecta el material. Se notifica. Se aborta el proceso y retorna el producto.
 
+- Paso alternativo 5: no se detecta correctamente el material, se aborta el proceso y se retorna el producto. Se informa y finaliza el CU.
+
 **Postcondición:**
 
-- Se imprime recibo con el monto que se le debe pagar a la persona
+- Se hace el reciclado del material calculando el monto que se le debe pagar a la persona por el reciclado.
 
 ___
 
-**Nombre del caso de uso:**
+#### Nombre del caso de uso:
 
-- Solicitar listado
+- Solicitar listado.
 
 **Descripción:** 
 
@@ -93,13 +96,15 @@ ___
 
 - Paso alternativo 4: las fechas ingresadas no son válidas. Se notifica y se retorna al paso 2.
 
+- Paso alternativo 5: no se reciclaron materiales en esas fechas. Se informa y finaliza el CU.
+
 **Postcondición:**
 
-- Se imprime listado con los tipos de materiales reciclados en el rango de las fechas ingresadas
+- Se imprime listado con los tipos de materiales reciclados en el rango de las fechas ingresadas.
 
 ___
 
-**Nombre del caso de uso:**
+#### Nombre del caso de uso:
 
 - Actualizar montos
 
@@ -109,11 +114,11 @@ ___
 
 **Actores:** 
 
-- Operador
+- Operador.
 
 **Precondiciones:**
 
-- No hay 
+- 
 
 **Curso Normal:**
 
@@ -135,16 +140,16 @@ ___
 	
 	- Paso 6: el sistema informa si desea actualizar el nuevo monto
 	
-	- Paso 8: el sistema registra el nuevo monto del material
+	- Paso 8: el sistema registra el nuevo monto del material.
 	
 
 **Curso Alterno:**
 
-- Paso alternativo 7: el operador selecciona la opción de que no quiere actualizar el monto. Fin de Caso de Uso
+- Paso alternativo 7: el operador selecciona la opción de que no quiere actualizar el monto. Fin de Caso de Uso.
 
 **Postcondición:**
 
-- Se actualiza el precio por kilo del material
+- Se actualiza el precio por kilo del material.
 
 
 

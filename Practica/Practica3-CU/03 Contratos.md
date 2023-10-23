@@ -1,28 +1,24 @@
-## Problema 03: Contratos.
+## Problema 3: Contratos.
 
-![ejercicio1](./drawios/ejercicio03_P3.drawio.png)
+![ejercicio3](./drawios/ejercicio03_P3.drawio.png)
+
 ___
 
 **Actores:**
 
 - Empleado de mesa
-
 - Empleado de rendiciones
-
 - Servidor externo
-
 
 **Casos de Usos**
 
 - Confeccionar minuta
-
 - Aprobar minuta
-
 - Verificar CUIT
 
 ___
-
-**Nombre del caso de uso:**
+	
+#### Nombre del caso de uso:
 
 - Confeccionar minuta
 
@@ -71,7 +67,7 @@ ___
 - Se confecciona una minuta.
 ___
 
-**Nombre del caso de uso:**
+#### Nombre del caso de uso:
 
 - Aprobar minuta.
 
@@ -129,7 +125,7 @@ ___
 
 **Descripción:**
 
-- Este Caso de Uso desribe el evento en el que se verifica el CUIT en la AFIP 
+- Este Caso de Uso desribe el evento en el que se verifica el CUIT en la AFIP.
 
 **Actores:** 
 
@@ -171,7 +167,7 @@ ___
 
 **Postcondición:**
 
-- Se hace la verificación del CUIT
+- Se verifica que el CUIT se encuentre habilitado.
 
 ___
 
@@ -189,7 +185,7 @@ ___
 
 **Precondiciones**
 
-
+- 
 
 **Curso Normal:**
 
