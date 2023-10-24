@@ -1,9 +1,5 @@
 ## Ejercicio 4: Realizar el DTE para modelar un turbo ventilador.
-Considere un sistema de control de un turbo ventilador que posee tres niveles de velocidad. Para ir de un
-nivel a otro, ya sea anterior o posterior, se debe girar una perilla en forma secuencial. Inicialmente el
-ventilador se encuentra apagado. Girando la perilla en el sentido de las agujas del reloj se enciende y se
-aumenta la velocidad, mientras que girando la perilla en el sentido contrario se disminuye. El ventilador
-puede ser apagado girando hacia la izquierda en el nivel 1 o hacia la derecha en el nivel 3.
+Considere un sistema de control de un turbo ventilador que posee tres niveles de velocidad. Para ir de un nivel a otro, ya sea anterior o posterior, se debe girar una perilla en forma secuencial. Inicialmente el ventilador se encuentra apagado. Girando la perilla en el sentido de las agujas del reloj se enciende y se aumenta la velocidad, mientras que girando la perilla en el sentido contrario se disminuye. El ventilador puede ser apagado girando hacia la izquierda en el nivel 1 o hacia la derecha en el nivel 3.
 
 ![ejercicio4](./drawios/ejercicio04_P4.drawio.png)
 
@@ -35,6 +31,7 @@ En el caso de que se seleccione la opción identificación por huella se procede
 En el caso de que se seleccione identificación por número de alumno, el sistema solicita que se ingrese el legajo y luego se continúa con el mismo procedimiento de emisión de voto. Si el legajo no es reconocido por el sistema es informado y se cancela la operación. Para ambos casos, una vez identificado el alumno, si el mismo ya emitió su voto el sistema muestra un mensaje y cancela la operación.
 
 Una vez iniciada la votación, se habilita la pantalla y se muestran las opciones para elegir el tipo de votación: “boleta completa” o “cortar boleta”. Si pasan 30 segundos y el votante no ha decidido su tipo de votación, la maquina emitirá un cartel de alerta donde indica que debe realizar la elección correspondiente, el cartel se mantendrá en pantalla hasta que el votante decida su tipo de votación.
+
 Una vez elegido el tipo de votación, se pasará a elegir la agrupación a votar, para ello la máquina oculta las opciones anteriores y muestra un listado de los partidos disponibles. Si se eligió cortar boleta, el votante deberá elegir dos agrupaciones, caso contrario, elige solo una agrupación.
 
 Una vez emitido el voto, es decir, que seleccionó la/s agrupación/es correspondiente/s, se oculta el listado, se muestra en toda la pantalla la opción/es elegida/s, se muestra un botón para confirmar y se muestra otro botón para cancelar. Si confirma el voto, el mismo se envía a imprimir, se muestra un mensaje éxito, envía un mensaje a la mesa de autoridades y finaliza la sesión. Si cancela se muestra un mensaje de cancelación y finaliza la sesión.
@@ -79,5 +76,18 @@ Una vez encendida la cinta, el usuario debe elegir uno de estos tres programas p
 En cualquier momento se puede apagar la cinta.
 
 ![ejercicio10](./drawios/ejercicio10_P4.drawio.png)
+
+## Ejercicio 11. Modelar un sistema el funcionamiento de una cafetera express.
+La cafetera es semi-automática. Posee solo 3 botones que el usuario puede presionar: uno para encender/apagar, otro para hacer café y otro para hacer cappuccino. Internamente, la máquina tiene: un calentador de agua para café, un calentador de leche, un motor para preparar café y un motor para verter la leche.
+
+Una vez encendida, la cafetera enciende el calentador de café y espera a que llegue a la temperatura óptima. Durante este tiempo, si se presiona algún botón (café o cappuccino) la máquina solo emite un pitido de error. Una vez llegada a la temperatura óptima de café, la máquina detecta si está colocado el recipiente de leche. De estar colocado, se enciende el calentador de leche y se espera a que llegue a su temperatura óptima. Nuevamente, durante este tiempo si se presiona un botón, la máquina emite un pitido. 
+
+Ya sea que haya o no recipiente de leche, una vez alcanzada la temperatura (agua para café o leche) la máquina queda a la espera de selección de una opción. Si durante la espera de selección de opción algún calentador baja de la temperatura óptima, entonces la cafetera vuelve a encender el calentador correspondiente, hasta alcanzar la temperatura óptima.
+
+Si el usuario presiona “café”, se activa el motor de café y se espera alcanzar el tiempo límite de servido de café. Luego, la cafetera queda nuevamente a la espera de selección de opción. Si el usuario presiona “cappuccino”, la cafetera sigue el mismo procedimiento, pero primero sirve la leche y luego el café. Durante el servido los calentadores NO bajan de la temperatura óptima.
+
+La cafetera puede ser apagada en cualquier momento (excepto cuando está sirviendo café, o leche).
+
+![ejercicio11](./drawios/ejercicio11_P4.drawio.png)
 
 
