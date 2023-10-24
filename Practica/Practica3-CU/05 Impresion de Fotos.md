@@ -11,9 +11,10 @@
 
 **Casos de Usos**
 
-- Cargar Imágenes.
+- Cargar Fotos.
 - Realizar Pago.
-- Retirar Fotos.
+- Pagar con Tarjeta.
+- Registrar Retiro.
 - Registrar Usuario
 - Iniciar Sesión
 - Cerrar Sesión
@@ -64,7 +65,7 @@ ___
 
 - Paso alternativo 6: el usuario registrado seleccioan la opción de "Subir Foto". Se retorna al paso 2.
 
-- Paso alternativo 7: no se registra el pago. Se notifica y finaliza el CU
+- Paso alternativo 7: no se registra el pago. Se notifica y finaliza el CU.
 	
 **Postcondición:**
 
@@ -92,7 +93,7 @@ ___
 
 - **Acción del Actor:**
 
-	- 
+	- Paso 3: el Usuario Registrado ingresa los datos de la tarjeta
 	
 	-
 
@@ -100,27 +101,33 @@ ___
 
 	- Paso 1: El sistema calcula el monto de las imágenes cargadas.
 	
-	-
+	- Paso 2: el sistema solicita los datos de la tarjeta
+	
+	- Paso 4: el sistema ejecuta el Caso de Uso "Pagar con Tarjeta"
+	
+	- Paso 5: el sistema entrega un código único de retiro.
 
 **Curso Alterno:**
 
+- Paso alternativo 4: no se registra el pago. Se informa y finaliza el CU
+
 **Postcondición:**
 
-- Se hace el registro del Pago y la entrega del ćodigo de retiro de las imágenes.
+- Se hace entrega del ćodigo de retiro de las imágenes.
 
 ___
 
 #### Nombre del caso:
 
-- Pagar con Tarjeta
+- Pagar con Tarjeta.
 
 **Descripción**
 
-- Este Caso de Uso describe el evento en el que un Usuario Registrado hace el pago de las imágenes
+- Este Caso de Uso describe el evento en el que un Usuario Registrado hace el pago de las imágenes.
 
 **Actores**
 
-- Usuario registrado
+- Usuario Registrado
 - Servidor externo
 
 **Precondiciones**
@@ -130,36 +137,30 @@ ___
 **Curso Normal:**
 
 - **Acción del Actor:**
-
-	- Paso 2: el usuario ingresa los datos de la tarjeta
 	
-	- Paso 4: el sistema externo acepta la conexión
+	- Paso 2: el sistema externo acepta la conexión
 	
-	- Paso 6: el servidor externo valida los datos y los fondos de la cuenta
+	- Paso 4: el servidor externo valida los datos y los fondos de la cuenta
 	
-	- Paso 7: el servidor externo envía los datos
+	- Paso 5: el servidor externo retorna la validación de la tarjeta
 
 - **Acciones del Sistema:**
-
-	- Paso 1: El sistema solicita los datos de la tarjeta
 	
-	- Paso 3: el sistema establece conexión con el servidor externo
+	- Paso 1: el sistema establece conexión con el servidor externo
 	
-	- Paso 5: el sistema envía los datos de las tarjeta
+	- Paso 3: el sistema envía los datos de las tarjeta
 	
-	- Paso 8: el sistema recibe que los datos de la tarjeta son correctos
+	- Paso 6: el sistema recibe que los datos de la tarjeta son correctos y posee fondos suficientes
 	
-	- Paso 9: el sistema recibe que la cuenta tiene fondos
-	
-	- Paso 10: el sistema registra el pago y cierra la conexión con el servidor externo
+	- Paso 7: el sistema registra el pago y cierra la conexión con el servidor externo
 
 **Curso Alterno:**
 
-- Paso alternativo 3: Falla la conexión con el servidor externo. Se notifica y termina el Caso de Uso.
+- Paso alternativo 2: Falla la conexión con el servidor externo. Se notifica y termina el Caso de Uso.
 
-- Paso alternativo 8: los datos de la tarjeta son incorrectos. Se notifica y se retorna al paso 1.
+- Paso alternativo 6: los datos de la tarjeta son incorrectos. Se notifica y se retorna al paso 1.
 
-- Paso alternativo 9: la cuenta no tiene fondos suficientes. Se notifica y termina el Caso de Uso.
+- Paso alternativo 6: la cuenta no tiene fondos suficientes. Se notifica y termina el Caso de Uso.
 
 **Postcondición:**
 
@@ -169,7 +170,7 @@ ___
 
 #### Nombre del caso:
 
-- Registrar retiro
+- Registrar retiro.
 
 **Descripción**
 
