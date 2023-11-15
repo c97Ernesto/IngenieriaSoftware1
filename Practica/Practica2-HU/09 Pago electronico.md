@@ -27,25 +27,28 @@ Tenga en cuenta que cada vez que el sistema debe conectarse a la central, debe e
 #### Frente
 - ID: **Conectar a la Central.**
 
-- TITULO: Como Empleado o Gerente quiero conectarme con la Central de Cobros para recuperar datos.
-
-- REGLAS DE NEGOCIO: 
-	- Token de identificación de Sistema
+- TITULO: Como Empleado o Gerente quiero conectarme con la Central de Cobros para recuperar datos o registrar pagos.
 
 **Dorso**
 
 - Criterios de aceptación (Conectar a la Central):
 - _Escenario 1: Conexión con la Central Exitosa para la recuperación de datos de una factura._
-	- DADO que el token único del sistema es correcto y hay conexión con la Central,
+	- DADO que el token único del sistema es correcto y hay conexión con la Central de Cobros,
 	- CUANDO el Empleado o Gerente selecciona "Conectarse a la Central"
 	- ENTONCES el sistema se conecta con la central de cobros.
 	
-- _Escenario 2: Conexión con la Central Fallida por token vencido._ 
+- _Escenario 2: Conexión con la Central Exitosa para la recuperación de los cobros del día._ 
+	- DADO que el token único del sistema es correcto y hay conexión con la Central de Cobros,
+	- CUANDO el Gerente selecciona "Obtener cobros".
+	- ENTONCES el sistema se conecta con la central de cobros y envía los cobros del día.
+
+	
+- _Escenario 3: Conexión con la Central Fallida por token vencido._ 
 	- DADO que el token único del sistema está vencido,
 	- CUANDO el Empleado o Gerente selecciona "Conectarse a la Central"
 	- ENTONCES el sistema informa que el token está vencido.
 
-- _Escenario 3: Conexión con la Central Fallida por no haber conexión_
+- _Escenario 4: Conexión con la Central Fallida por no haber conexión_
 	- DADO que el token único del sistema es correcto pero no hay conexión con la Central,
 	- CUANDO el Empleado o Gerente selecciona "Conectarse a la Central".
 	- ENTONCES el sistema informa que no hay conexión con la central.
@@ -119,27 +122,24 @@ ___
 - TITULO: Como Gerente quiero Registrar los Pagos que se hicieron en el día para enviarlos a la Central.
 
 - REGLAS DE NEGOCIO: 
-	- Conexión con la Central.
-	- Clave maestruli.
 	- No deben enviarse dos veces las transacciones.
-
 
 **Dorso**
 
 - Criterios de aceptación (Registrar Pagos):
 
-- _Escenario 1:._
-	- DADO que se establece conexión con la central, la clave maestra es correcta y no se han enviado los pagos del día,
-	- CUANDO el empleado ingresa la clave "086", establece conexión con la central y selecciona la opción de "Registrar Pagos".
-	- ENTONCES el sistema envía 
+- _Escenario 1: Registro de Pagos Exitoso._
+	- DADO que hay conexión con la central, la clave maestra ""086"" es correcta y no se han enviado los pagos del día,
+	- CUANDO el empleado ingresa la clave "086" y selecciona la opción de "Registrar Pagos".
+	- ENTONCES el sistema redirige al Gerente a Conectar con la Central
 	
-- _Escenario 2:._ 
-	- DADO 
-	- CUANDO
-	- ENTONCES
+- _Escenario 2: Registro de Pagos Fallido porque ya se han envíados los pagos del día._ 
+	- DADO que hay conexión con la centra, la clave maestra "999" es correcta, pero ya se ha envia el registro de los pagos del día,
+	- CUANDO el empleado ingresa la clave "999" y selecciona "Registrar Pagos".
+	- ENTONCES el sistema informa que ya se han registrado los pagos del día.
 	
-- _Escenario 2: ._ 
-	- DADO 
+- _Escenario 2: Registro de Pagos Fallido por clave maestra incorrecta._ 
+	- DADO que hay conexión con la central
 	- CUANDO
 	- ENTONCES
 
