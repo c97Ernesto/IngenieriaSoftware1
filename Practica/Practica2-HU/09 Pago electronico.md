@@ -12,6 +12,9 @@ Tenga en cuenta que cada vez que el sistema debe conectarse a la central, debe e
 
 **ROL DE USUARIOS:**
 
+- Empleado
+- Gerente
+
  
 
 **HISTORIAS DE USUARIOS:**
@@ -33,7 +36,7 @@ Tenga en cuenta que cada vez que el sistema debe conectarse a la central, debe e
 
 - Criterios de aceptación (Conectar a la Central):
 - _Escenario 1: Conexión con la Central Exitosa para la recuperación de datos de una factura._
-	- DADO que el token único del sistema es correcto y hay conexión con la Central de Cobros,
+	- DADO que el código de factura es correcto
 	- CUANDO el Empleado o Gerente selecciona "Conectarse a la Central"
 	- ENTONCES el sistema se conecta con la central de cobros.
 	
@@ -167,6 +170,92 @@ ___
 	
 - _Escenario 2: Error al visualizar las estadísticas por clave incorrecta._ 
 	- DADA 
+	- CUANDO
+	- ENTONCES
+	
+___
+
+#### Frente
+- ID: **Recuperar Datos.**
+ 
+- TITULO: Como Empleado o Gerente quiero Verificar el código de un pago ele
+
+
+**Dorso**
+
+- Criterios de aceptación ():
+
+- _Escenario 1: Recuperación exitosa de los datos de la factura._
+	- DADO que el código de pago electrónico "111" es correcto y hay conexión con la central de cobros,
+	- CUANDO el Empleado o Gerente ingresa: "111" y selecciona "Recuperar Datos".
+	- ENTONCES el sistema se conecta con la central y recupera los datos de la factura.
+	
+- _Escenario 2: Recuperaión fallida de datos por código de factura incorrecto._ 
+	- DADO 
+	- CUANDO
+	- ENTONCES
+	
+- _Escenario 2: Recuperación fallida de datos por no haber conexión con la Central de Cobros._ 
+	- DADO 
+	- CUANDO
+	- ENTONCES
+
+___
+
+
+#### Frente
+- ID: **Calcular Monto.**
+
+- TITULO: Como Gerente o Empleado quiero calcular el monto de la factura para cobrarla
+
+- REGLAS DE NEGOCIO:
+	- 1er fecha de vencimiento.
+	- 2da fecha de vencimiento.
+
+**Dorso**
+
+- Criterios de aceptación ():
+
+- _Escenario 1: Cobro exitoso de factura._
+	- DADO 
+	- CUANDO
+	- ENTONCES
+	
+- _Escenario 2: Cobro exitoso de factura con 1er vencimiento._ 
+	- DADO 
+	- CUANDO
+	- ENTONCES
+	
+- _Escenario 2: Cobro fallido de factura con 2do vencimiento._ 
+	- DADO 
+	- CUANDO
+	- ENTONCES
+___
+
+#### Frente
+- ID: **Registrar Cobros.**
+
+- TITULO: 
+
+- REGLAS DE NEGOCIO:
+	- Clave maetra para la recuperación de las transacciones y servicios cobrados.
+
+**Dorso**
+
+- Criterios de aceptación ():
+
+- _Escenario 1: Registro de cobros exitoso._
+	- DADO que hay conexión con la central, la clave maestra es correcta y no se han enviado los cobros del día.
+	- CUANDO el Gerente ingresa la clave "0303456" y selecciona "Registrar envío de cobros"
+	- ENTONCES el sistema se conecta con la central y envía los cobros generados en el día
+	
+- _Escenario 2: Registros de cobros fallido por no haber conexión con la central._ 
+	- DADO 
+	- CUANDO
+	- ENTONCES
+	
+- _Escenario 2: Registro de cobros fallido por querer enviar por 2nda vez los cobros._ 
+	- DADO 
 	- CUANDO
 	- ENTONCES
 

@@ -15,7 +15,7 @@
 - **TÍTULO**: Descripción de la historia de la forma: 
 	- **Como** _rol_ **quiero** _algo_ **para poder** _beneficio_
 	
-- **REGLAS DE NEGOCIO**: Conjunto de reglas, normas, políticas, etc. que condicionan el método de operación.
+- **REGLAS DE NEGOCIO**: Conjunto de reglas, normas, políticas, etc. que condicionan el método de operación (Requisitos no Funcionales).
 
 #### Reverso
 - **CRITERIOS DE ACEPTACIÓN:** Criterios por los cuales una historia cumple con las expectativas del cliente. Formato:
