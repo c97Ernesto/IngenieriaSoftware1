@@ -6,16 +6,21 @@
 
 - Empleado
 
-- Servidor de la Central de Cobro.
+- Gerente
+
+- Servidor de la Central de Cobro
 
 **Casos de Usos**
 
 - Realizar Pago.
 
-- Recuperar Datos.
+- Recuperar Datos de Factura.
 
-- Registrar Pagos
+- Registrar Cobros.
 
+- Enviar Transacciones.
+
+- Ver Estadísticas.
 ___
 
 #### Nombre del caso de uso:
@@ -24,51 +29,45 @@ ___
 
 **Descripción:** 
 
-- Este Caso de Uso describe el evento en el que el Empleado hace el cobro de una factura.
+- Este Caso de Uso describe el evento en el que el Empleado o Gerente hace el cobro de una factura.
 
 **Actores:** 
 
-- Empleado
+- Empleado.
 
 **Precondiciones:**
 
-- Ninguna
+- 
 
 **Curso Normal:**
 
 - **Acción del Actor:**
 
-	- Paso 1: El Empleado selecciona la opción de "Realizar Pago"
+	- Paso 1: El Empleado o Gerente selecciona la opción de "Cobrar"
 	
-	- Paso 3: el empleado ingresa el código.
-	
-	- Paso 7: el empleado ingresa el monto de la factura
+	- Paso 3: el Empleado ingresa el código
 
 - **Acciones del Sistema:**
 
-	- Paso 2: El sistema solicita el código de pago electrónico
+	- Paso 2: el sistema solicita el código de pago electrónico
 	
-	- Paso 3: el sistema verifica el Código de pago electrónico
+	- Paso 4: el sistema ejecuta el CU "Recuperar Datos de Factura"
 	
-	- Paso 4: el sistema ejecuta el CU Recuperar Datos
+	- Paso 5: el sistema verifica la fecha de vencimiento
 	
-	- Paso 5: el sistema calcula el monto
+	- Paso 6: el sistema calcula el monto a cobrar según el vencimiento
 	
-	- Paso 6: el sistema informa y solicita el monto
-	
-	- Paso 8: el sistema registra el pago.
+	- Paso 7: el sistema cobra el monto solicitado
 
 **Curso Alterno:**
 
-- Paso alternativo 3: el código de pago electrónico es incorrecto. Se notifica y finaliza el CU.
+- Paso alternativo 4: Error al recuperar los datos de la factura. Se informa y finaliza el CU.
 
-- Paso alternativo 4: no se recuperan los datos de la factura. Se notifica y termina el CU.
-
-- Paso alternativo 6: la factura no se puede cobrar por superar el 2do vencimiento. Se informa y finaliza el CU.
+- Paso alternativo 6: No hay monto a cobrar por fecha de 2do vencimiento. Se notifica y finalica el CU.
 
 **Postcondición:**
 
-- Se cobra una Factura 
+- 
 
 ___
 
@@ -78,7 +77,7 @@ ___
 
 **Descripción:** 
 
-- Este Caso de Uso describe el evento en el que se recuperan los datos de una factura mediante el código de pago electrónico.
+- Este Caso de Uso describe el evento en el que se recuperan los datos de una factura de la Central de Cobros.
 
 **Actores:** 
 
@@ -86,45 +85,51 @@ ___
 
 **Precondiciones:**
 
-- Haber ejecutado el Caso de Uso: Realizar Pago.
+- Haber ejecutado el CU "Realizar Pago".
 
 **Curso Normal:**
 
 - **Acción del Actor:**
 
-	- Paso 2: La Central acepta la conexión con el sistema
+	- Paso 2: el Servidor Externo acepta la conexión y solicita	el token
 	
-	- Paso 3: La central solicita el código de pago electrónico
+	- Paso 4: el Servidor verifica el token y retorna el resultado
 	
-	- Paso 5: la central verifica el código
+	- Paso 6: el Servidor acepta la solicitud y colicita los datos de la factura
 	
-	- Paso 6: la central retorna los datos de la factura
+	- Paso 8: el Servidor verifica los datos de la factura y retorna el resultado
 
 - **Acciones del Sistema:**
 
-	- Paso 1: el sistema establece la conexión con la Central
+	- Paso 1: el sistema establece conexión con el Servidor Externo
 	
-	- Paso 4: el sistema envía el código
+	- Paso 3: el sistema envía el token al Servidor Externo
 	
-	- Paso 7: el sistema recibe los datos de la factura y cierra la conexión con el servidor
+	- Paso 5: el sistema recibe el estado del token y solicita el envío de los datos de la factura
+	
+	- Paso 7: el sistema envía los datos de la factura
+	
+	- Paso 9: el sistema recibe los datos y finaliza la conexión con el Servidor de la Central de Cobros.
 
 **Curso Alterno:**
 
-- Paso alternativo 1: la central rechaza la conexión. Se informa y termina el CU.
+- Paso alternativo 1: No hay conexión con el Servidor. Se informa y finaliza el CU.
+
+- Paso alternativo 5: El token es incorrecto, se informa y finaliza el CU.
 
 **Postcondición:**
 
-- Se recuperan los datos de una factura 
+- Se recuperan los datos de una factura.
 
 ___
 
 #### Nombre del caso de uso:
 
-- Registrar Pagos
+- Registrar Cobros
 
 **Descripción:**
 
-- Este Caso de Uso describe el evento en el que el Gerente registra los pagos realizados. 
+- Este Caso de Uso describe el evento en el que el Gerente de la surcursal regristra los cobros del día.
 
 **Actores:** 
 
@@ -132,33 +137,34 @@ ___
 
 **Precondiciones:**
 
+- 
+
 **Curso Normal:**
 
 - **Acción del Actor:**
 
-	- Paso 1: El Gerente selecciona "Registrar Pagos"
+	- Paso 1: El Gerente selecciona la opción de "Registrar Cobros"
 	
-	- Paso 3: el gerente ingresa la clave maestra
+	- Paso 3: el Gerente ingresa la clave maestra
 
 - **Acciones del Sistema:**
 
-	- Paso 2: el sistema solicita la clave maestra
+	- Paso 2: el sistema solicita la clave maestra.
 	
-	- Paso 4: el sistema verifica la clave maestra
+	- Paso 4: el sistema verifica la clave ingresada
 	
-	- Paso 5: el sistema recupera los cobros y transacciones del día
+	- Paso 5: el sistema recupera las transacciones del día
 	
-	- Paso 6: el sistema ejecuta el Caso de Uso "Enviar Cobros y Transacciones"
+	- Paso 6: el sistema ejecuta el CU "Enviar Transacciones"
 	
-	- Paso 7: el sistema informa el el registro de los pagos y transacciones
+	- Paso 7: el sistema registra como enviadas las transacciones del día
 
 **Curso Alterno:**
 
 - Paso alternativo 4: la clave maestra es incorrecta. Se notifica y finaliza el CU.
 
-- Paso alternativo 5: no se pueden recuperar los pagos y transacciones porque ya se han recuperados. Se informa y finaliza el CU.
+- Paso alternativo 6: No se pueden enviar las transacciones del día, se informa y finaliza el CU.
 
-- Paso alternativo 7: no se enviaron los pagos y transacciones. Se notifica y finaliza el CU.
 
 **Postcondición:**
 
@@ -168,45 +174,136 @@ ___
 
 #### Nombre del caso de uso:
 
-- Enviar Cobros y Transacciones
+- Enviar Transacciones.
 
 **Descripción:** 
 
-- Este Caso de uso describe el evento en el que la Central de Cobro recibe las transacciones.
+- Este CU describe el evento en el que La Central de Cobros recibe las transacciones del día.
 
 **Actores:** 
 
-- Central de Cobro.
+- Central de Cobros.
 
 **Precondiciones:**
 
-- Haber ejecutado el Caso de Uso: "Registrar Pagos"
+- Haber ejecutado el CU "Registrar Cobros".
 
 **Curso Normal:**
 
 - **Acción del Actor:**
 
-	- Paso 2: la Central acepta la conexión del sistema
+	- Paso 2: La Central de Cobro acepta la conexión y solicita le token
 	
-	- Paso 3: la Central solicita los datos
+	- Paso 4: la Central verifica el token recibido y retorna el resultado
 	
-	- Paso 5: la central recibe e informa la recepción de los datos
+	- Paso 7: la Central recibe las transacciones y confirma la recepción
 
 - **Acciones del Sistema:**
 
-	- Paso 1: El sistema establece la conexión con la Central
+	- Paso 1: El sistema establece conexión con la Central de Cobro
 	
-	- Paso 4: el sistema envía los datos
+	- Paso 3: el sistema envía el token
 	
-	- Paso 5: el sistema recibe la recepción de los datos por parte de la central
+	- Paso 5: el sistema recibe que el token es correcto
 	
-	- Paso 6: el sistema cierra la conexión con la central
+	- Paso 6: el sistema envía las transacciones del día
+	
+	- Paso 8: el sistema recibe la confirmación de la recepción de las transacciones y finaliza la coneción con la Central de Cobro.
 
 **Curso Alterno:**
 
-- Paso alternativo 1: la central rechaza la conexión. Se informa y termina el CU.
+- Paso alternativo 1: No hay conexión con la Central de cobro, se informa y finaliza el CU.
+
+- Paso alternativo 5: El token se enceuntra vencido. Se informa y finaliza el CU.
+
+- Paso alternativo 8: Se recibe el rechazo de la recepción de las transacciones del día porque ya ha sido efectuado. Se notifica y fin de CU.
+
 
 **Postcondición:**
 
-- Los pagos y transacciones son enviados a la central. 
+- Se registran las transacciones en la Central de Cobros. 
+
+
+___
+
+#### Nombre del caso de uso:
+
+- Ver Estadísticas.
+
+**Descripción:** 
+
+- Este Caso de Uso describe el evento en el que el Gerente visualiza los impuestos y servicios cobrados.
+
+**Actores:**
+
+- Gerente
+
+**Precondiciones:**
+
+- 
+
+**Curso Normal:**
+
+- **Acción del Actor:**
+
+	- Paso 1: El Gerente selecciona la opción de "Visualizar Estadísticas"
+	
+	- Paso 3: el Gerente ingresa la clave maestra
+	
+	- Paso 6: el Gerente ingresa las fechas
+
+- **Acciones del Sistema:**
+
+	- Paso 2: el sistema solicita la clave maestra
+	
+	- Paso 4: el sistema verifica la clave maestra
+	
+	- Paso 5: el sistema solicita el rango de fechas
+	
+	- Paso 7: el sistema valida el rango de fechas ingresado
+	
+	- Paso 8: el sistema informa los montos y la cantidad de cobros realizados agrupando por empresa.
+
+**Curso Alterno:**
+
+- Paso alternativo 4: La clave maestra ingresada es incorrecta, se informa y finaliza el CU.
+
+- Paso alternativo 7: No hay cobros realizados en esas fechas, se informa y finaliza el CU.
+
+**Postcondición:**
+
+- Se visualizan los cobros realizados en el rango de fechas indicados.
+
+
+___
+
+**Nombre del caso de uso:**
+
+- 
+
+**Descripción:** 
+
+**Actores:** 
+
+**Precondiciones:**
+
+**Curso Normal:**
+
+- **Acción del Actor:**
+
+	-
+	
+	-
+
+- **Acciones del Sistema:**
+
+	-
+	
+	-
+
+**Curso Alterno:**
+
+**Postcondición:**
+
+___
 

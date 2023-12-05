@@ -1,4 +1,4 @@
-##Problema 7: Préstamos Personales.
+## Problema 7: Préstamos Personales.
 
 ![ejercicio7](drawios/ejercicio07_P3.drawio.png)
 

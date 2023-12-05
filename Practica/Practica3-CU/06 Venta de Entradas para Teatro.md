@@ -29,9 +29,9 @@
 ___
 
 
-**Nombre del caso**
+#### Nombre del caso
 
-- Reservar Entradas
+- Reservar Entradas.
 
 **Descripción**
 
@@ -43,7 +43,7 @@ ___
 
 **Precondiciones**
 
-- Ninguna
+- 
 
 **Curso Normal:**
 
@@ -73,21 +73,21 @@ ___
 
 - Paso alternativo 3: No hay funciones disponibles. Se informa y termina el Caso de Uso.
 
-- Paso alternativo 7: la cantidad de entradas de la persona superan el máximo de 2. Se notifica y se termina el CU
+- Paso alternativo 7: la cantidad de entradas de la persona superan el máximo de 2. Se notifica y se termina el CU.
 
 **Postcondición:**
 
-- Se hace la reserva de entradas
+- Se hace la reserva de entradas.
 
 ___
 
-**Nombre del caso**
+#### Nombre del caso
 
-- Comprar Entradas via Web
+- Comprar Entradas via Web.
 
 **Descripción**
 
-- Este Caso de Uso describe el evento en el que un Usuario elige una función e ingresa sus datos para comprar entradas
+- Este Caso de Uso describe el evento en el que un Usuario elige una función e ingresa sus datos para comprar entradas.
 
 **Actores**
 
@@ -95,7 +95,7 @@ ___
 
 **Precondiciones**
 
-- No hay
+- 
 
 **Curso Normal:**
 
@@ -103,7 +103,7 @@ ___
 
 	- Paso 1: El Usuario selecciona la opción de "Comprar Entradas"
 	
-	- Paso 3: el Usuario selecciona la opción disponible
+	- Paso 3: el Usuario selecciona una opción
 	
 	- Paso 5: el Usuario ingresa los datos solicitados
 	
@@ -138,7 +138,7 @@ ___
 
 ___
 
-**Nombre del caso**
+#### Nombre del caso
 
 - Comprar Entradas Personalmente.
 
@@ -152,7 +152,7 @@ ___
 
 **Precondiciones**
 
-- No hay
+- 
 
 **Curso Normal:**
 
@@ -182,18 +182,25 @@ ___
 
 **Curso Alterno:**
 
+- Paso alternativo 2: No hay funciones disponibles, se notifica y finaliza el CU.
+
+- Paso alternativo 6: No hay lugares disponibles. Se informa y finaliza el CU.
+
+- Paso alternativo 9: No se pudo realizar el pago. Se notifica y finaliza el CU.
+
 **Postcondición:**
 
+- Se venden entredas disponibles.
 
 ___
 
-**Nombre del caso**
+#### Nombre del caso
 
 - Retirar Entradas
 
 **Descripción**
 
-- Este Caso de Uso describe el evento en el que se compran las entradas reservadas
+- Este Caso de Uso describe el evento en el que se compran las entradas reservadas.
 
 **Actores**
 
@@ -234,13 +241,13 @@ ___
 
 ___
 
-**Nombre del caso**
+#### Nombre del caso
 
-- Verificar Código
+- Verificar Código.
 
 **Descripción**
 
-- Este Caso de Uso describe el evento en el que el Empleado verifica el código de retiro de entradas
+- Este Caso de Uso describe el evento en el que el Empleado verifica el código de retiro de entradas.
 
 **Actores**
 
@@ -270,22 +277,22 @@ ___
 
 **Postcondición:**
 
-- Se imprimen las entradas
+- Se imprimen las entradas.
 
 ___
 
 
-**Nombre del caso**
+#### Nombre del caso
 
-- Pagar con Tarjeta
+- Pagar con Tarjeta.
 
 **Descripción**
 
-- Este Caso de Uso describe el evento en el que se paga por la compra de entradas
+- Este Caso de Uso describe el evento en el que se paga por la compra de entradas.
 
 **Actores**
 
-- Servidor Externo de tarjetas.
+- Servidor Externo de tarjetas, Usuario o Empleado.
 
 **Precondiciones**
 
@@ -295,36 +302,56 @@ ___
 
 - **Acción del Actor:**
 
-	-
+	- Paso 2: el Usuario o Empleado ingresa los datos de la tarjeta
 	
-	-
+	- Paso 4: el Servidor Externo de Tarjetas acepta la conexión
+	
+	- Paso 5: el Servidor Externo de Tarjetas solicita los datos de la tarjeta
+	
+	- Paso 7: el Servidor Externo valida los datos de la tarjeta y los fondos de la misma
+	
+	- Paso 8: el Servidor Externo retorna el resultado
 
 - **Acciones del Sistema:**
 
-	-
+	- Paso 1: El sistema solicita los datos de la tarjeta
 	
-	-
+	- Paso 3: el sistema se conecta con el Servidor Externo de Tarjetas
+	
+	- Paso 6: el sistema envía los datos de la tarjeta
+	
+	- Paso 9: el sistema recibe que los datos de la tarjeta son correctos.
+	
+	- Paso 10: el sistema recibe que la tarjeta posee fondos suficientes
+	
+	- Paso 11: el sistema registra el pago y finaliza la conexión con el Servidor Externo.
 
 **Curso Alterno:**
 
+- Paso alternativo 3: No se puede establecer conexión con el Servidor Externo. Se informa y finaliza el CU.
+
+- Paso alternativo 9: Los datos de la tarjeta son incorrectos, se informa y finaliza el CU.
+
+- Paso alternativo 10: La tarjeta no posee fondos suficientes. Se notifica y fin del CU.
+
 **Postcondición:**
 
-- Se hace el pago de las entradas
+- Se efectúa el registro y el pago de las entradas.
 
 ___
 
 
-**Nombre del caso**
+#### Nombre del caso
 
-- Administrar Salas
+- Administrar Salas.
 
 **Descripción**
 
-- Este Caso de Uso describe el evento en el que se cargan las obras en la grilla
+- Este Caso de Uso describe el evento en el que se cargan las obras en la grilla.
 
 **Actores**
 
-- Administrador de Salas
+- Administrador de Salas.
 
 **Precondiciones**
 
@@ -332,19 +359,21 @@ ___
 
 - **Acción del Actor:**
 
-	-
+	- Paso 1: El Administrador selecciona la opción de "Administrar Salas"
 	
-	-
+	- Paso 3: el Administrador ingresa las obra
 
 - **Acciones del Sistema:**
 
-	-
+	- Paso 2: el sistema solicita la distribución semanal
 	
-	-
+	- Paso 4: el sistema registra la obra y la carga en la grilla
 
 **Curso Alterno:**
 
+-
+
 **Postcondición:**
 
-- Se Carga una obra en la grilla
+- Se Carga una obra en la grilla.
 

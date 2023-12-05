@@ -1,4 +1,4 @@
-### Problema 09: Un Aventón.
+## Problema 09: Un Aventón.
 
 ![ejercicio9](drawios/ejercicio09_P3.drawio.png)
 
@@ -10,11 +10,17 @@
 **Casos de Usos**
 
 - Iniciar Sesión.
+
 - Cerrar Sesión.
+
 - Registrar Persona.
+
 - Publicar Viaje.
+
 - Postular a un viaje.
+
 - Aceptar/Rechazar Usuario.
+
 - Calificar Usuario.
 
 

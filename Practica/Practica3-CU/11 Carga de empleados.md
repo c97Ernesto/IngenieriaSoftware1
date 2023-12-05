@@ -1,4 +1,4 @@
-### Problema 11: Carga de Impuestos.
+## Problema 11: Carga de Impuestos.
 
 ![ejercicio11](./drawios/ejercicio11_P3.drawio.png)
 
