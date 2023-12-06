@@ -19,7 +19,7 @@
 
 - Postular a un viaje.
 
-- Aceptar/Rechazar Usuario.
+- Seleccionar Candidatos.
 
 - Calificar Usuario.
 
@@ -130,7 +130,7 @@ ___
 
 **Precondiciones:**
 
-- Tener la sesión iniciada
+- El Usuario debe tener la sesión iniciada
 
 **Curso Normal:**
 
@@ -152,9 +152,9 @@ ___
 
 **Curso Alterno:**
 
-- Paso alternativo 2: el Usuario adeuda calificaciones. Se informa y finaliza el CU.
+- Paso alternativo 2: El Usuario adeuda calificaciones. Se informa y finaliza el CU.
 	
-- Paso alternativo 5: los datos del viaje se superponen con otro viaje del mismo usuario. Se notifica y termina el Caso de Uso.
+- Paso alternativo 5: Los datos del viaje se superponen con otro viaje del mismo usuario. Se notifica y termina el Caso de Uso.
 
 **Postcondición:**
 
@@ -199,15 +199,17 @@ ___
 **Postcondición:**
 
 - Un usuario es puesto en la lista de espera.
+
 ___
+
 
 **Nombre del caso de uso:**
 
-- Aceptar/Rechazar candidatos.
+- Seleccionar Candidatos.
 
 **Descripción:** 
 
-- Este Caso de Uso describe el evento en el que un Usuario acepta/rechaza candidatos postulados.
+- Este Caso de Uso describe el evento en el que un Usuario selecciona un candidato para el viaje.
 
 **Actores:** 
 
@@ -221,29 +223,29 @@ ___
 
 	- Paso 1: El Usuario selecciona la opción de "Listar Candidatos"
 	
-	- Paso 3: el usuario "Acepta"/"Rechaza" un pasajero
+	- Paso 3: el usuario "Selecciona" un pasajero
+	
 
 - **Acciones del Sistema:**
 
 	- Paso 2: el sistema muestra una lista con los pasajeros postulados.
 	
 	- Paso 4: el sistema registra al pasajero en el viaje.
+	
 
 **Curso Alterno:**
 
-- Paso alternativo 2: no hay usuarios postulados. Se notifica y termina el CU.
-
-- Paso alternativo 4: el usuario "Rechaza" un pasajero. Fin de CU / se retorna al paso 2¿?
+- Paso alternativo 2: No hay usuarios postulados. Se notifica y termina el CU.
 
 **Postcondición:**
 
-- Se aceptó/rechazó un Usuario. / Se completó un viaje¿?
+- Se seleccionó un Usuario.
 
 ___
 
 **Nombre del caso de uso:**
 
-- Calificar Usuario
+- Calificar Usuario.
 
 **Descripción:** 
 
@@ -263,15 +265,17 @@ ___
 
 	- Paso 1: el Usuario selecciona la opción de "Calificar Usuarios"
 	
-	- Paso 3: el usuario selecciona el Usuario a calificar
+	- Paso 3: el Usuario selecciona al Usuario a calificar
 	
-	- Paso 5: el usuario califica positivamente
+	- Paso 5: el Usuario califica positivamente
 
 - **Acciones del Sistema:**
 	
 	- Paso 2: el sistema muestra los usuarios
 	
-	- Paso 4: el sistema solicita califar negativa o positivamente
+	- Paso 4: el sistema solicita la calificación
+	
+	- Paso 6: el sistema registra la calificación del Usuario
 
 **Curso Alterno:**
 
@@ -281,5 +285,4 @@ ___
 
 **Postcondición:**
 
-___
-
+- Se hace la calificación del Usuario

@@ -1,23 +1,40 @@
 ## Problema 5: Impresión de fotos.
 
+Se desea desarrollar un sistema para la impresión de fotos para una casa fotográfica. Los clientes pueden subir sus fotos, pagar por internet y luego ser retiradas personalmente por el local.
+
+Para subir las fotos la persona debe registrarse en el sitio, ingresando sus datos personales, nombre, apellido, email, domicilio, nombre de usuario y contraseña.
+
+Una vez autenticado, el usuario puede subir un máximo de 50 fotos para ser impresas. Las fotos se ingresan de a una. Una vez subidas, el usuario debe abonar el monto total (el valor de cada foto es de $15). El pago se realiza con tarjeta de crédito, ingresando los datos de la misma (número de tarjeta, código de seguridad y nombre del titular), la cual debe ser validada a través del sistema del banco. Una vez que se realiza el pago se le otorga al cliente un código único que le servirá posteriormente para retirar las fotos.
+
+Un cliente debe acercarse a la sucursal para retirar las fotos enviadas previamente. Para esto debe presentar el código único a un empleado. Este registra el código, la fecha de retiro y entrega las fotos al cliente.
+
 ![ejercicio5](./drawios/ejercicio05_P3.drawio.png)
 
 **Actores:**
 
 - Usuario no registrado
+
 - Usuario registrado
+
 - Servidor externo
+
 - Empleado
 
 **Casos de Usos**
 
 - Cargar Fotos.
+
 - Realizar Pago.
+
 - Pagar con Tarjeta.
+
 - Registrar Retiro.
-- Registrar Usuario
-- Iniciar Sesión
-- Cerrar Sesión
+
+- Registrar Usuario.
+
+- Iniciar Sesión.
+
+- Cerrar Sesión.
 
 ___
 
@@ -43,10 +60,9 @@ ___
 
 	- Paso 1: El Usuario Registrado selecciona la opción de "Subir Imagen"
 	
-	- Paso 4: el usuario sube una imagen
+	- Paso 4: el Usuario Registrado sube una imagen
 	
 	- Paso 6: el usuario selecciona la opción de "Realizar Pago"
-
 
 - **Acciones del Sistema:**
 
@@ -54,18 +70,18 @@ ___
 	
 	- Paso 3: el sistema solicita el ingreso de una imagen
 	
-	- Paso 5: el sistema solicita que seleccione una opción "Subir foto" o "Realizar Pago"
+	- Paso 5: el sistema registra la imagen ingresada y habilita la función de "Realizar Pago"
 	
 	- Paso 7: el sistema se ejecuta el CU "Realizar Pago".
 	
 	
 **Curso Alterno:**
 
-- Paso alternativo 2: la cantidad de imágenes ingresadas llegó al máximo permitido. Se notifica y salta al paso 7.
+- Paso alternativo 2: La cantidad de imágenes ingresadas llegó al máximo permitido. Se notifica y salta al paso 7.
 
-- Paso alternativo 6: el usuario registrado seleccioan la opción de "Subir Foto". Se retorna al paso 2.
+- Paso alternativo 6: El usuario registrado selecciona la opción de "Subir Foto". Se retorna al paso 2.
 
-- Paso alternativo 7: no se registra el pago. Se notifica y finaliza el CU.
+- Paso alternativo 7: No se registra el pago. Se notifica y finaliza el CU.
 	
 **Postcondición:**
 
@@ -73,13 +89,13 @@ ___
 
 ___
 
-**Nombre del caso de uso:**
+#### Nombre del caso de uso:
 
-- Realizar Pago
+- Realizar Pago.
 
 **Descripción:** 
 
-- Este caso de Uso describe el evento en el que el Usuario Registrado recibe el código de retiro de imágenes.
+- Este caso de Uso describe el evento en el que el Usuario Registrado realiza el pago recibiendo el código de retiro de imágenes.
 
 **Actores:** 
 
@@ -105,7 +121,7 @@ ___
 	
 	- Paso 4: el sistema ejecuta el Caso de Uso "Pagar con Tarjeta"
 	
-	- Paso 5: el sistema entrega un código único de retiro.
+	- Paso 5: el sistema registra el pago y hace la entrega del código único de retiro.
 
 **Curso Alterno:**
 
@@ -123,16 +139,15 @@ ___
 
 **Descripción**
 
-- Este Caso de Uso describe el evento en el que un Usuario Registrado hace el pago de las imágenes.
+- Este Caso de Uso describe el evento en el que se realiza el pago de las imágenes.
 
 **Actores**
 
-- Usuario Registrado
-- Servidor externo
+- Servidor externo.
 
 **Precondiciones**
 
-- Haber ejecutado el Caso de Uso: Subir Fotos.
+- Haber ejecutado el Caso de Uso: Realizar Pago.
 
 **Curso Normal:**
 
@@ -142,7 +157,7 @@ ___
 	
 	- Paso 4: el servidor externo valida los datos y los fondos de la cuenta
 	
-	- Paso 5: el servidor externo retorna la validación de la tarjeta
+	- Paso 5: el servidor externo retorna el estado de la tarjeta
 
 - **Acciones del Sistema:**
 	
@@ -174,11 +189,11 @@ ___
 
 **Descripción**
 
-- Este Caso de uso describe el evento en el que el empleado registra el retiro de las imágenes
+- Este Caso de uso describe el evento en el que el Empleado registra el retiro de las imágenes.
 
 **Actores**
 
-- Empleado
+- Empleado.
 
 **Precondiciones**
 
@@ -224,11 +239,11 @@ ___
 
 **Descripción:** 
 
-- Este Caso de Uso describe el evento en el que una persona se registra en el sitema
+- Este Caso de Uso describe el evento en el que una persona ingresa sus datos para hacer el registro de una cuenta en el sistema.
 
 **Actores:** 
 
-- Usuario no registrado
+- Usuario no Registrado.
 
 **Precondiciones:**
 
@@ -238,7 +253,7 @@ ___
 
 - **Acción del Actor:**
 
-	- Paso 1: El usuario no registrado selecciona la opción de "Registrarse"
+	- Paso 1: El Usuario no Registrado selecciona la opción de "Registrarse"
 	
 	- Paso 3: el usuario ingresa los datos solicitados
 	
@@ -251,18 +266,18 @@ ___
 	- Paso 4: el sistema pide email, nombre de usuario único y contraseña.
 	
 	- Paso 6: el sistema verifica los datos ingresados
+	
+	- Paso 7: el sistema registra la cuenta en el sistema.
 
 **Curso Alterno:**
-
-- Paso alternativo 6: el email ingresado no es válido. Se notifica y se vuelve al paso 4.
 	
-- Paso alternativo 6: el nombre de usuario ya existe en el sistema. Se notifica y se vuelve al paso 4.
+- Paso alternativo 6: El nombre de usuario ya existe en el sistema. Se notifica y se vuelve al paso 4.
 	
-- Paso alternativo 6: la contraseña ingresada es demasiado corta o no cumple con los caracteres solicitados. Se notifica y se vuelve al paso 4.
+- Paso alternativo 6: La contraseña ingresada es demasiado corta o no cumple con los caracteres solicitados. Se notifica y se vuelve al paso 4.
 
 **Postcondición:**
 
-- Se registra una persona en el sistema.
+- Se crea una nueva cuenta de usuario en el sistema.
 
 ___
 
@@ -276,7 +291,7 @@ ___
 
 **Actores**
 
-- 
+- Usuario Registrado
 
 **Precondiciones**
 
@@ -286,17 +301,21 @@ ___
 
 - **Acción del Actor:**
 
-	-
+	- Paso 1: el Usuario Registrado selecciona la opción de "Iniciar Sesión"
 	
-	-
+	- Paso 3: el Usuario Registrado ingresa los datos de inicio de sesión
 
 - **Acciones del Sistema:**
 
-	-
+	- Paso 2: el sistema solicita usuario y contraseña
 	
-	-
+	- Paso 4: el sistema verifica los datos ingresados
+	
+	- Paso 5: el sistema registra el inicio de sesión del Usuario Registrado y activa las funciones del mismo
 
 **Curso Alterno:**
+
+- Paso alternativo 4: Los datos ingresados no corresponden a una cuenta del sistema. Se notifica discrepancia y retorna al paso 2.
 
 **Postcondición:**
 
@@ -307,7 +326,7 @@ ___
 
 #### Nombre del caso:
 
-- Cerrar Sesión
+- Cerrar Sesión.
 
 **Descripción**
 
@@ -315,7 +334,7 @@ ___
 
 **Actores**
 
-- Usuario registrado
+- Usuario Registrado
 
 **Precondiciones**
 
@@ -325,19 +344,21 @@ ___
 
 - **Acción del Actor:**
 
-	-
+	- Paso 1: El Usuario Registrado selecciona la opción de "Cerrar Sesión"
 	
-	-
+	- Paso 3: el Usuario Registrado confirma el cierre de la sesión
 
 - **Acciones del Sistema:**
 
-	-
+	- Paso 2: el sistema solicita la confirmación del cierre de sesión
 	
-	-
+	- Paso 4: el sistema finaliza la sesión del Usuario Registrado y deshabilita las funciones del mismo.
 
 **Curso Alterno:**
 
+- Paso alternativo 3: El Usuario Registrado cancela la operación y se termina el CU.
+
 **Postcondición:**
 
-- La sesión es cerrada y se deshabilitan las opciones para el usuario registrado eliminando los datos de la sesińo.
+- La sesión es cerrada y se deshabilitan las opciones para el usuario registrado eliminando los datos de la sesión.
 

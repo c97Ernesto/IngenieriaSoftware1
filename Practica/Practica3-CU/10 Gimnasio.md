@@ -62,13 +62,15 @@ ___
 	
 	- Paso 6: el sistema verifica que no exista otro email 
 	
-	- Paso 7: el sistema registra el Usuario y genera y envía la contraseña del mismo.
+	- Paso 7: el sistema genera, envía la contraseña del mismo y registra el Usuario.
 
 **Curso Alterno:**
 
 - Paso alternativo 6: el email ingresado ya existe, se informa y se retorna al paso 4.
 
 **Postcondición:**
+
+- Se crea una nueva cuenta en el sistema.
 
 ___
 
@@ -120,7 +122,9 @@ ___
 
 - Cerrar Sesión
 
-**Descripción:** 
+**Descripción:**
+
+- Este Caso de Uso describe el evento en el que una Usuario Registrado cierra la sesión en el sistema.
 
 **Actores:** 
 
@@ -148,6 +152,8 @@ ___
 
 **Postcondición:**
 
+- Se cierra la sesión y deshabilitan las funciones del Usuario Registrado
+
 ___
 
 #### Nombre del caso de uso:
@@ -172,7 +178,7 @@ ___
 
 	- Paso 1: El Usuario Registrado selecciona la opción de "Solicitar Turno"
 	
-	- Paso 2: el usuario ingresa: fecha, hora y actividad
+	- Paso 2: el usuario ingresa fecha, hora y actividad
 
 - **Acciones del Sistema:**
 

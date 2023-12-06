@@ -1,16 +1,22 @@
 ## Problema 4: Máquina de reciclado.
+Se desea modelar un sistema que controle una máquina de reciclado. La máquina cuenta con un recipiente externo donde se depositan los materiales a reciclar (vidrio, papel, plástico o aluminio). La persona coloca lo que desea reciclar en el recipiente y luego presiona la opción “reciclar”. El sistema detecta el tipo de material y registra el peso; por último imprime un recibo con el monto total que se le debe pagar a la persona por lo reciclado. Si el sistema no detecta correctamente el tipo de material aborta el proceso retornando el producto.
+
+El sistema también es utilizado por un operador a través de una consola que se encuentra bajo llave. El operador puede solicitar un listado con los tipos de materiales reciclados en un periodo de fechas determinado, detallando además el total abonado por dicho material. También, el operador puede actualizar los montos a pagar por kilo de cada tipo de material que la máquina puede reciclar. Para esto, el sistema primero solicita el tipo de material a actualizar. Luego se pide el nuevo monto. Si el operador acepta, se actualiza el material seleccionado.
 
 ![ejercicio4](./drawios/ejercicio04_P3.drawio.png)
 
 **Actores:**
 
 - Persona
+
 - Operador
 
 **Casos de Usos**
 
 - Reciclar Material.
+
 - Solicitar Listado.
+
 - Actualizar Montos.
 
 ___
@@ -29,7 +35,7 @@ ___
 
 **Precondiciones:**
 
-- No hay
+- 
 
 **Curso Normal:**
 
@@ -49,9 +55,9 @@ ___
 
 **Curso Alterno:**
 
-- Paso alternativo 2: el sistema no detecta el material. Se notifica. Se aborta el proceso y retorna el producto.
+- Paso alternativo 2: El sistema no detecta el material. Se notifica. Se aborta el proceso y retorna el producto.
 
-- Paso alternativo 5: no se detecta correctamente el material, se aborta el proceso y se retorna el producto. Se informa y finaliza el CU.
+- Paso alternativo 5: No se detecta correctamente el material, se aborta el proceso y se retorna el producto. Se informa y finaliza el CU.
 
 **Postcondición:**
 
@@ -73,7 +79,7 @@ ___
 
 **Precondiciones:**
 
-- No hay
+-
 
 **Curso Normal:**
 
@@ -145,11 +151,8 @@ ___
 
 **Curso Alterno:**
 
-- Paso alternativo 7: el operador selecciona la opción de que no quiere actualizar el monto. Fin de Caso de Uso.
+- Paso alternativo 7: El operador selecciona la opción de que no quiere actualizar el monto. Fin de Caso de Uso.
 
 **Postcondición:**
 
 - Se actualiza el precio por kilo del material.
-
-
-
