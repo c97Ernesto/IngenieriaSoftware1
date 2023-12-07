@@ -4,29 +4,32 @@
 <h2>Parte 1: Teoría.</h2>
 **a)** Describa qué tipos de problemas se pueden modelar utilizando Redes de Petri.
 
-- Utilizadas para especificar problemas en tiempo real en los que son necesarios representar aspectos de concurrencia
+- Utilizadas para especificar problemas en tiempo real en los que son necesarios representar aspectos de concurrencia.
 - Permiten modelar sistemas dinámicos y concurrentes mediante una representación gráfica de eventos discretos.
 
 **b)** Enumere y explique elementos, vistos en teoría, que se utilizan para modelar las Redes de Petri.
 
 1. **Sitio/Lugar**: Modela un estado o una condición.
 	
-	
 2. **Transiciones**: Modela un evento o una acción.
 
 3. **Arco**: Relaciona un sitio con una transición o una transición con un sitio.
 
-4. **Marca(token)**: Su función es habilitar/deshabilitar transiciones para controlar la ejecución de la red. Se colocan en los sitios. Puede haber más de uno en un sitio.
-
 
 **c)** Explique que son las marcas o tokens.
--  
+
+-  **Marca(token)**: Representan la presencia de recursos, información o la activación de un avento en un lugar específico. Su función es habilitar/deshabilitar transiciones para controlar la ejecución de la red. Se colocan en los sitios. Puede haber más de uno en un sitio.
 
 **d)** Explique qué significa una transición que tiene salidas pero no entradas.
 
-- 
+- Significa que la transición no tiene condiciones de disparos basadas en la presencia de tokens en lugares de entrada. 
+- La transición se puede disparar en cualquier momento sin depender de las condiciones de otros lugares.
+- Son útiles cuando se quiere modelar un proceso que se activa de manera independiente de otras actividades del sistema
+
 
 **e)** Explique qué significa una transición que tiene entradas pero no salidas.
+
+- Significa que la transición puede tener condiciones de disparo basadas en la presencia de tokens en lugares de entrada, pero una vez que se dispara, no produce ningún token en lugares de salida.
 
 <h2 align="start">Parte 2: Práctica.</h2>
 
