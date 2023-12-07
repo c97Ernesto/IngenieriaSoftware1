@@ -103,4 +103,28 @@ Finalmente se envía la caja al sector de almacenamiento.
 
 ![ejercicio8](./drawios/ejercicio08_RP.drawio.png)
 
+### Ejercicio 9. Mobiliaria.
+Una distribuidora mobiliaria de la ciudad recibe pedidos de muebles desarmados y empaquetados, los cuales deben ser armados y ensamblados para su posterior envío y entrega a domicilio.
 
+Los pedidos ingresan a la distribuidora por una línea única de montaje y luego son derivados al puesto A o al puesto B que posee dicha distribuidora. Allí los pedidos son analizados. Cada puesto atiende un pedido por vez. 
+
+Luego, los pedidos pasan al depósito del sector de ensamblado para su armado y embalaje. Se sabe que en este sector hay un conjunto de empleados que trabajan juntos y van tomando los pedidos del depósito y pueden, como máximo, armar y embalar 3 pedidos simultáneamente. Una vez que el pedido está listo se lo pasa al sector de envíos en donde se esperan 5 pedidos para armar un lote que será cargado en el camión de reparto para su posterior entrega.
+
+![ejercicio9](./drawios/ejercicio09_RP.drawio.png)
+
+
+
+### Ejercicio 10. Juego en la escuela.
+Modelar un juego en donde participan los alumnos/as de una escuela. Para comenzar el juego, se realizan dos filas pertenecientes a dos equipos, el equipo A por un lado y el equipo B por otro. Para el inicio del juego se necesitan de 6 alumnos/as, 3 del equipo A y 3 del equipo B. Una vez finalizado el juego, participan los siguientes 6 alumnos y así sucesivamente.
+
+![ejercicio10](./drawios/ejercicio10_RP.drawio.png)
+
+
+### Ejercicio 11. Fábrica de pastas.
+Se desea modelar mediante una red de Petri el funcionamiento de una fábrica de pastas. La fábrica cuenta con dos líneas de producción independientes, en una se realizan canelones y en la otra se realizan sorrentinos. Por cada una de las líneas llegan porciones de masa. Existen 3 empleados que se encargan de estirar las masas y pueden trabajar en cualquiera de las dos líneas.
+
+Una vez estiradas las masas pasan a los sectores de corte respectivos. En el caso de los canelones, de una masa se obtienen 3 canelones. En el caso de los sorrentinos, de una masa se obtienen 6 sorrentinos. En cada sector se corta de a una masa por vez.
+
+Luego de cortadas las masas cada unidad obtenida en el corte pasa al sector de relleno. En cada sector hay una máquina que realiza esta tarea. La máquina de sorrentinos rellena tres sorrentinos al mismo tiempo, mientras que la máquina de canelones solo rellena de a uno. Finalizado el relleno, las pastas ya están listas para ser guardarlas en cajas. En el caso de los sorrentinos se arman cajas de 6 sorrentinos y en el caso de los canelones las cajas contienen 3 unidades. Una vez armadas las cajas se despachan.
+
+![ejercicio11](./drawios/ejercicio11_RP.drawio.png)
