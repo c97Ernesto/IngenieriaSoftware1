@@ -3,12 +3,12 @@
 </div>
 
 ### Parte 1: Definiciones.
-**1.Definir brevemente qué es un requerimiento.**
+**1. Definir brevemente qué es un requerimiento.**
 
 Los requerimientos del sistema especifican lo que el sistema de información deberá hacer o cuál propiedad o cualidad debe de tener éste. 
 
 
-**2.Definir requerimientos funcionales y no funcionales.**
+**2. Definir requerimientos funcionales y no funcionales.**
 
 **_Funcionales:_** Especifican lo que el sistema de información debe hacer.
 	
@@ -24,11 +24,11 @@ Los requerimientos del sistema especifican lo que el sistema de información deb
 - _Requerimientos organizacionales._ Se derivan de las políticas y procedimientos existentes en la organización del cliente y en la del desarrollador (entrega, implementación, estándares).
 - _Requerimientos externos._ Interoperabilidad, legales, privacidad, seguridad, éticos, etc.
 
-**3.Definir que es un stakeholder.** 
+**3. Definir que es un stakeholder.** 
 
 Son las personas que serán afectadas de uno u otro modo (directa o indirectamente) por el sistema
 
-**4.Definir las fuentes más importantes para la obtención de información.**
+**4. Definir las fuentes más importantes para la obtención de información.**
 
 _**Métodos discretos:**_
 
@@ -43,7 +43,7 @@ _**Métodos interactivos**_
 - Planeación conjunta de Requerimientos (JRP o JAD).
 - Lluvia de ideas (Brainstorming).
 	
-**5.Indicar los puntos de vista (de manera genérica) que se pueden reconocer en un proyecto de software.**
+**5. Indicar los puntos de vista (de manera genérica) que se pueden reconocer en un proyecto de software.**
 	
 **_Interactuadores:_** representan a las personas u otros sistemas que interactúan directamente con el sistema. Pueden influir en los requeriemientos del sistema de algún modo.
 
@@ -51,7 +51,7 @@ _**Métodos interactivos**_
 
 **_Dominio:_** representan las características y restricciones del dominio que influyen en los requerimientos del sistema.
 
-**6.Enumerar tres problemas de comunicación que pueden existir en la elicitación de requisitos.**
+**6. Enumerar tres problemas de comunicación que pueden existir en la elicitación de requisitos.**
 
 - Conflictos personales o políticos
 - Medios de comunicación inadecuados (diagramas que no entienden los clientes y usuarios).
@@ -121,16 +121,16 @@ _**Métodos interactivos**_
 **2) Enumere y describa brevemente las etapas de la preparación de una entrevista.**
 
 1. Leer el material sobre los antecedentes.
-- Poner atención en el lenguaje. Buscar un vocabulario común. Imprescindible para poder entender al entrevistado.	
+	- Poner atención en el lenguaje. Buscar un vocabulario común. Imprescindible para poder entender al entrevistado.	
 		
 2. Establecer los objetivos de la entrevista.
 	
 3. Decidir a quien/es entrevistar.
-- Minimizar el número de entrevistas
-- Los entrevistados deben conocer con antelación el objetivo de la entrevista y las preguntas que se le van a hacer.
+	- Minimizar el número de entrevistas
+	- Los entrevistados deben conocer con antelación el objetivo de la entrevista y las preguntas que se le van a hacer.
 	
 4. Planifiación de la entrevista y preparación del entrevistado.
-- Establecer fecha, hora, lugar y duración de cada entrevista de acuerdo con el entrevistado.
+	- Establecer fecha, hora, lugar y duración de cada entrevista de acuerdo con el entrevistado.
 	
 5. Decidir sobre los tipos de preguntas y su estructura.
 
@@ -198,7 +198,7 @@ Lea las preguntas y vuelva a redactarlas de una manera más apropiada. Especifiq
 
 
 
-####Situación 2
+#### Situación 2
 Apenas ha entrado a la oficina de su entrevistado se da cuenta que él no ha dejado de revisar papeles, mirar el reloj y hacer llamadas telefónicas. Usted supone que se siente nervioso porque está atrasado con otro trabajo que tiene que terminar.
 
 **1.** Explique brevemente cómo resolvería tal situación.
@@ -208,7 +208,7 @@ Apenas ha entrado a la oficina de su entrevistado se da cuenta que él no ha dej
 - Hablar con otra persona que esté en el mismo nivel jerárquico.
 - Algún otra manera en que le resulte más facil/cómodo responder preguntas (cuestionario, 				etc).
 
-####Situación 3
+#### Situación 3
 El siguiente es el primer informe de una entrevista realizada por uno de los miembros de su equipo de análisis de sistemas:
 
 > En mi opinión, el resultado de la entrevista fue muy bueno. El entrevistado me permitió hablar con él durante una hora y media. Me relató toda la historia del negocio, que fue muy interesante. También mencionó que las cosas no han cambiado desde que él ha estado en la empresa, hace aproximadamente 16 años. En breve nos reuniremos nuevamente para terminar la entrevista, pues, no tuvimos tiempo para analizar las preguntas que preparé. 
