@@ -85,7 +85,7 @@ ___
 #### Frente
 - ID: **Elegir Libro.**
 
-- TITULO: Como Usuario Registrado quiero elegir un libro para poder comprarlo
+- TITULO: Como Usuario Registrado quiero elegir un libro para poder comprarlo.
 
 
 **Dorso**
@@ -108,7 +108,7 @@ ___
 #### Frente
 - ID: **Comprar Libro.**
 
-- TITULO: Como Usuario Registrado quiero pagar el libro para comprarlo
+- TITULO: Como Usuario Registrado quiero pagar el libro para comprarlo.
 
 - REGLAS DE NEGOCIO:
 	- Por disposición del Banco Central solo el titular de la tarjeta puede hacer la compra. 
@@ -139,7 +139,6 @@ ___
 - ID: **Pagar con tarjeta.**
 
 - TITULO: Como Usuario Registrado quiero pagar con tarjeta para finalizar la compra del libro
-
 
 **Dorso**
 
@@ -209,7 +208,7 @@ ___
 ___
 
 #### Frente
-- ID: **Comprar Libro.**
+- ID: **.**
 
 - TITULO: 
 

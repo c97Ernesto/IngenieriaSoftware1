@@ -6,13 +6,17 @@ Para comprar el usuario debe iniciar sesión y una vez logueado el sistema muest
 **ROL DE USUARIOS:**
 
 - Persona
+
 - Usuario
 
 **HISTORIAS DE USUARIOS:**
 
 - Comprar bebidas.
+
 - Registrar persona.
+
 - Iniciar de Sesión.
+
 - Cerrar Sesión
 
 ___
@@ -21,7 +25,7 @@ ___
 #### Frente
 - ID: **Comprar Bebidas.**
 
-- TITULO: Como usuario quiero comprar bebidas para .
+- TITULO: Como usuario quiero seleccionar babidas para comprarlas.
 
 - REGLAS DE NEGOCIO:
 	- Usuario superando el monto a los 4500 se le hace descuento del 10%.
@@ -57,7 +61,7 @@ ___
 #### Frente
 - ID: **Registrar Persona.**	
 
-- TITULO: Como Persona quiero registrarme en el sistema para comprar bebidas.
+- TITULO: Como Persona quiero ingresar mis datos para registrarme.
 
 - REGLAS DE NEGOCIO:
 	- El mail tiene que ser único.
@@ -89,8 +93,6 @@ ___
 - ID: **Iniciar Sesión.**
 
 - TITULO: Como Usuario quiero iniciar sesión para comprar bebidas.
-
-- REGLAS DE NEGOCIO:
 	
 	
 **Dorso**
@@ -117,10 +119,8 @@ ___
 #### Frente
 - ID: **Cerrar Sesión.**
 
-- TITULO: Como Usuario quiero cerrar sesión para finalizar
+- TITULO: Como Usuario quiero cerrar sesión para finalizar.
 
-- REGLAS DE NEGOCIO: 
-	- 
 
 
 **Dorso**

@@ -50,18 +50,11 @@
 
 
 ### Ejemplo
-Un sitio web dispone de películas que se publican de manera semanal. Se desea
-desarrollar un subsistema para la reproducción de estas películas.
+Un sitio web dispone de películas que se publican de manera semanal. Se desea desarrollar un subsistema para la reproducción de estas películas.
 
-La información puede ser accedida tanto por usuarios registrados o usuarios
-visitantes. A los usuarios registrados se les permite ver adelantos (trailers) y ver las películas completas. Para esto último, los usuarios deben estar correctamente autenticados. Además, si la película tiene categoría “exclusiva”
-la visualización tendrá un costo. El pago es mediante tarjeta de crédito a través de un servidor al que se le envía el número de la tarjeta y el código de
-seguridad. Una vez validados estos datos y comprobados los fondos el servidor
-realiza el cobro.
+La información puede ser accedida tanto por usuarios registrados o usuarios visitantes. A los usuarios registrados se les permite ver adelantos (trailers) y ver las películas completas. Para esto último, los usuarios deben estar correctamente autenticados y no tener la cuenta bloqueada (después del 3er intento de autenticación fallido). Además, si la película tiene categoría “exclusiva” la visualización tendrá un costo. El pago es mediante tarjeta de crédito a través de un servidor al que se le envía el número de la tarjeta y el código de seguridad. Una vez validados estos datos y comprobados los fondos el servidor realiza el cobro.
 
-A los usuarios visitantes sólo se les permite ver los adelantos. Para esto, el
-sistema muestra una lista de las últimas películas de la semana. El usuario
-selecciona cuál desea ver, y el sistema lo reproduce en pantalla.
+A los usuarios visitantes sólo se les permite ver los adelantos. Para esto, el sistema muestra una lista de las últimas películas de la semana. El usuario selecciona cuál desea ver, y el sistema lo reproduce en pantalla.
 
 Un usuario visitante puede registrarse y pasar a ser un usuario registrado, para lo cual debe completar los datos personales, eligiendo un nombre de usuario único y una contraseña.
 
@@ -254,7 +247,7 @@ ___
 
 #### Nombre del caso de uso:
 
-- Iniciar Sesión
+- Iniciar Sesión.
 
 **Descripción:** 
 
@@ -280,13 +273,19 @@ ___
 
 	- Paso 2: El sistema solicita usuario y contraseña.
 	
-	- Paso 4: el sistema verifica los datos de inicio de sesión.
+	- Paso 4: el sistema verifica que el nombre de usuario corresponda a una cuenta no bloqueada
 	
-	- Paso 5: el sistema registra el inicio de sesión y habilita las funciones del usuario registrado.
+	- Paso 5: el sistema verifica que la contraseña corresponda al mail ingresado
+	
+	- Paso 6: el sistema registra el inicio de sesión y habilita las funciones del Usuario Registrado.
 
 **Curso Alterno:**
 
-	- Paso alternativo 4: el usuario o contraseña ingresados no son válidos. Se notifica y retorna al paso 2.
+	- Paso alternativo 4: El nombre de usuario ingresado se encuentra bloqueado. Se informa y finaliza el CU.
+	
+	- Paso alternativo 5: La contraseña ingresada no es correcta y no se ha alcanzado el 3er intento. Informar discrepancia, se incrementa en 1 la cantidad de intentos fallidos y se retorna al paso 2.
+	
+	- Paso alternativo 5: La contraseña ingresada es incorrecta y la cantidad de intentos es igual a 3. Informar discrepancia, bloquear cuenta y finalizar el Caso de Uso.
 
 **Postcondición:**
 

@@ -15,7 +15,9 @@ Por último, el gerente del banco puede pedir un listado de créditos aprobados 
 **HISTORIAS DE USUARIOS:**
 
 - Iniciar trámite.
+
 - Consultar trámite.
+
 - Listar créditos.
 
 ___
@@ -87,10 +89,6 @@ ___
 - ID: **Listar Créditos.**
 
 - TITULO: Como Gerente quiero listar crédito para que puedan ser aprobados.
-
-- REGLAS DE NEGOCIO: 
-
-	- 
 	
 #### Dorso
 - Criterios de aceptación (Listar Créditos):
@@ -105,7 +103,7 @@ ___
 	- ENTONCES el sistema informa que no hay créditos aprobados en esas fechas.
 	
 - _Escenario 3: Listado Fallido, fechas inválidas._ 
-	- DADO que las fechas 1/3/26 y 2/4/26 son inválidas,
+		- DADO que las fechas 1/3/26 y 2/4/26 son inválidas,
 	- CUANDO el Gerente ingresa: "1/3/26", "2/4/26" y selecciona "Listar cŕeditos".
 	- ENTONCES el sistema informa que las fechas ingresadas son inválidas.
 

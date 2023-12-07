@@ -1,5 +1,11 @@
 ## Problema 10: Gimnasio.
 
+Se desea modelar con casos de uso un sistema web para el manejo de turnos de un gimnasio. Las personas que desean solicitar un turno para concurrir al gimnasio primero deben registrarse. Para ello deben ingresar el dni, el nombre, el apellido y el mail que será utilizado como nombre de usuario (por lo tanto, no puede repetirse). Una vez que el usuario se registra, el sistema genera una contraseña que es enviada al correo de la persona.
+
+Para solicitar un turno, el cliente del gimnasio, previa autenticación, debe ingresar: fecha, hora y actividad. Si hay cupo para esa actividad en ese día y a esa hora, el sistema registra el turno, de lo contrario, muestra un mensaje de cupo no disponible. 
+
+Por último cuando un cliente llega al gimnasio debe registrar su llegada, para esto la secretaria del gimnasio solicita el número de dni del cliente para hacer el registro. El gimnasio se maneja con un sistema externo que suma puntos a aquellos clientes que cumplen con las reservas realizadas. Es necesario que cuando se registre la asistencia del cliente al gimnasio se haga la suma correspondiente para lo cual el sistema se conecta con el servidor externo, envía el dni del cliente y la actividad que va a realizar y el servidor se encarga de sumar los puntos.
+
 ![ejercicio10](./drawios/ejercicio10_P3.drawio.png)
 
 **Actores:**
