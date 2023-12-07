@@ -2,6 +2,7 @@
 
 
 <h2>Parte 1: Teoría.</h2>
+
 **a)** Describa qué tipos de problemas se pueden modelar utilizando Redes de Petri.
 
 - Utilizadas para especificar problemas en tiempo real en los que son necesarios representar aspectos de concurrencia.
