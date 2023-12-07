@@ -1,6 +1,6 @@
 <h1 align='center'>Ingeniería de Software 1</h1>
 
-## [Práctica 1: Técnicas de Elicitación de Requerimientos.](./Practica/Practica1-Tecnicas de Elicitacion de Requerimientos.md)
+## [Práctica 1: Técnicas de Elicitación de Requerimientos.](./Practica/Practica1-Tecnicas%20de%20Elicitacion%20de%20Requerimientos.md)
 
 ## [Práctica 2: Historias de Usuarios.](./Practica/Practica2-HU)
 
